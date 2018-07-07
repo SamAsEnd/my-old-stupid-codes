@@ -1,0 +1,406 @@
+/**********************************************************************
+***************  GROUP NAME                 ID                        C
+***************                                                       S
+***************  Mulugeta Asnake            0401217                   e
+***************  Rediet  Gedefaw            0401322                   d
+***************  Samirawite Goitom          /03                       2
+***************                                                       0
+***************                                                       0
+***************                                                       5
+***********************************************************************/
+#include <iostream.h>
+#include <time.h>
+#include <conio.h>
+#include <string.h>
+#include <fstream.h>
+struct Resurve
+{
+	char Name[25];
+	int Destinetion;
+	int payed;
+	int Reservetion_code;
+	tm *RT;
+	};
+Resurve Rsrv[100];
+int Number_Of=0;
+void welcome()
+{
+	clrscr();
+	cout<<"_______________________________________________________________________________\n";
+	cout<<"                          Bahir Dar train station\n";
+	cout<<"_______________________________________________________________________________\n";
+}
+void Menu();
+void Creat_Reserve();
+void View_Reserve();
+void Update_Reserve();
+void Cancle_Reserve();
+void Pay_Reserve();
+void Save();
+void Load();
+int checT(int code,int day);
+void main()
+{
+	Menu();
+	welcome();
+	cout<<"exit";
+}
+void Menu()
+{
+	welcome();
+	int ch;
+	cout<<"                   Exit  -  press 0"<<endl;
+	cout<<"           Creat reserv  -  press 1"<<endl;
+	cout<<"            view reserv  -  press 2"<<endl;
+	cout<<"          Update reserv  -  press 3"<<endl;
+	cout<<"          Cancle reserv  -  press 4"<<endl;
+	cout<<"             Pay reserv  -  press 5"<<endl;
+	cout<<"           Load to file  -  press 6"<<endl;
+	cout<<"          Save from file -  press 7"<<endl;
+	cin>>ch;
+	cin.ignore();
+	switch(ch)
+	{
+		case 0:
+			break;
+		case 1:
+			Creat_Reserve();
+			break;
+		case 2:
+			View_Reserve();
+			break;
+		case 3:
+			Update_Reserve();
+			break;
+		case 4:
+			Cancle_Reserve();
+			break;
+		case 5:
+			Pay_Reserve();
+			break;
+		case 6:
+			Load();
+			break;
+		case 7:
+			Save();
+			break;
+		default:
+		{
+			cout<<"   Incorrect choose press any key to try again . . . ";
+			getch();
+			Menu();
+		}
+	}
+}
+void Creat_Reserve()
+{
+	welcome();
+	cout<<"        Name:    ";
+	cin.getline(Rsrv[Number_Of].Name,25);
+	while(strcmp(Rsrv[Number_Of].Name,"")==0)
+	{
+		cout<<"        Try again\n        Name:    ";
+		cin.getline(Rsrv[Number_Of].Name,25);
+	}
+	cout<<"  Choose your destination?"<<endl;
+	cout<<"       Adama  --  7"<<endl;
+	cout<<" Addis Abeba  --  8"<<endl;
+	cout<<"        Axum  --  9"<<endl;
+	cout<<"       Dease  --  10"<<endl;
+	cout<<"   Dire diwa  --  11"<<endl;
+	cout<<"      Gonder  --  12"<<endl;
+	cout<<"       Harer  --  13"<<endl;
+	cout<<"      Hawasa  --  14"<<endl;
+	cout<<"      Jijiga  --  15"<<endl;
+	cout<<"        Jima  --  16"<<endl;
+	cout<<"      Mekele  --  17"<<endl;
+	cout<<"  Destination:    ";
+	cin>>Rsrv[Number_Of].Destinetion;
+	while(Rsrv[Number_Of].Destinetion>17||Rsrv[Number_Of].Destinetion<7)
+	{
+		cout<<"Enter Again\n  Destination:    ";
+		cin>>Rsrv[Number_Of].Destinetion;
+	}
+	int temp;
+	time_t now=time(0);
+	Rsrv[Number_Of].RT = localtime(&now);
+    Rsrv[Number_Of].RT->tm_sec=0;
+	Rsrv[Number_Of].RT->tm_min=0;
+	Rsrv[Number_Of].RT->tm_hour=Rsrv[Number_Of].Destinetion;
+	Rsrv[Number_Of].payed=0;
+	Rsrv[Number_Of].Reservetion_code=1000+Number_Of;
+	welcome();
+	cout<<"when do u want to go:\n";
+	cout<<"                today --- press 1\n";
+	cout<<"              tomorro --- press 2\n";
+	cout<<"the day after tomorro --- press 3\n             --> ";
+	cin>>temp;
+	if(checT(Rsrv[Number_Of].Destinetion,Number_Of)==0&&temp==1)
+	{
+		cout<<"      you can't reserve for today\n"; 
+		cout<<"      you are automatically assigned for tomorro\n";
+		temp++;
+	}
+	if(temp==2)
+	{
+		Rsrv[Number_Of].RT->tm_mday+=1;
+		Rsrv[Number_Of].RT->tm_wday+=1;
+		Rsrv[Number_Of].RT->tm_yday+=1;
+	}
+	else if(temp==3)
+	{
+		Rsrv[Number_Of].RT->tm_mday+=2;
+		Rsrv[Number_Of].RT->tm_wday+=2;
+		Rsrv[Number_Of].RT->tm_yday+=2;
+	}
+	cout<<"Name,Destinetion,Payed,Reservetion code, for"<<endl;
+	cout<<Rsrv[Number_Of].Name<<" , "<<Rsrv[Number_Of].Destinetion<<" , ";
+		if(Rsrv[Number_Of].payed)cout<<"True";
+		else cout<<"False";
+		cout<<" , "<<Rsrv[Number_Of].Reservetion_code<<" , "<<asctime(Rsrv[Number_Of].RT)<<endl;
+	Number_Of++;
+	cout<<"   ADDED succesfully";
+	getch();
+	Menu();
+}
+void View_Reserve()
+{
+	welcome();
+	cout<<"Name,Destinetion,Payed,Reservetion code, for"<<endl;
+	cout<<"____________________________________________"<<endl;
+	for(int i=0;i<Number_Of;i++)
+	{
+		cout<<Rsrv[i].Name<<" , "<<Rsrv[i].Destinetion<<" , ";
+		if(Rsrv[i].payed)cout<<"True";
+		else cout<<"False";
+		cout<<" , "<<Rsrv[i].Reservetion_code<<" , "<<asctime(Rsrv[i].RT)<<endl;
+	}
+	getch();
+	Menu();
+}
+void Update_Reserve()
+{
+	int temp;
+	welcome();
+	if(Number_Of!=0)
+	{
+		cout<<"  Name reservetion code:  ";
+		cin>>temp;
+		cin.ignore();
+		while(temp<=1000&&temp-1000>Number_Of)
+		{
+			cout<<"    Incorect reservetion code\n       try again:   ";
+			cin>>temp;
+		}
+		temp-=1000;
+	    
+		cout<<"        Name:    ";
+		cin.getline(Rsrv[temp].Name,25);
+		while(strcmp(Rsrv[temp].Name,"")==0)
+		{
+			cout<<"        Try again\n        Name:    ";
+			cin.getline(Rsrv[temp].Name,25);
+		}
+		cout<<"  Choose your destination?"<<endl;
+		cout<<"       Adama  --  7"<<endl;
+		cout<<" Addis Abeba  --  8"<<endl;
+		cout<<"        Axum  --  9"<<endl;
+		cout<<"       Dease  --  10"<<endl;
+		cout<<"   Dire diwa  --  11"<<endl;
+		cout<<"      Gonder  --  12"<<endl;
+		cout<<"       Harer  --  13"<<endl;
+		cout<<"      Hawasa  --  14"<<endl;
+		cout<<"      Jijiga  --  15"<<endl;
+		cout<<"        Jima  --  16"<<endl;
+		cout<<"      Mekele  --  17"<<endl;
+		cout<<"  Destination:    ";
+		cin>>Rsrv[temp].Destinetion;
+		while(Rsrv[temp].Destinetion<7||Rsrv[temp].Destinetion>17)
+		{
+			cout<<"Enter Again\n  Destination:    ";
+			cin>>Rsrv[temp].Destinetion;
+		}
+		int temp1;
+		time_t now=time(0);
+		Rsrv[temp].RT = localtime(&now);
+		Rsrv[temp].RT->tm_sec=Rsrv[temp].RT->tm_min=0;
+		Rsrv[temp].RT->tm_hour=Rsrv[temp].Destinetion;
+		welcome();
+		cout<<"when do u want to go:\n";
+		cout<<"                today --- press 1\n";
+		cout<<"              tomorro --- press 2\n";
+		cout<<"the day after tomorro --- press 3\n             --> ";
+		cin>>temp1;
+		if(checT(Rsrv[temp].Destinetion,Number_Of)==0&&temp1==1)
+		{
+			cout<<"      you can't reserve for today\n"; 
+			cout<<"      you are automatically assigned for tomorro\n";
+			temp1++;
+		}
+		if(temp1==2)Rsrv[temp].RT->tm_mday+=1;
+		else if(temp1==3)Rsrv[temp].RT->tm_mday+=2;
+		cout<<"   UPDATE succesfully";
+	}
+	else
+	    cout<<"   No reservetion avalable\n";
+	getch();
+	Menu();
+}
+void Cancle_Reserve()
+{
+	int temp;
+    welcome();
+    if(Number_Of!=0)
+	{
+		cout<<"  Name reservetion code:  ";
+		cin>>temp;
+		while(temp<=1000&&temp-1000>Number_Of)
+		{
+			cout<<"    Incorect reservetion code\n       try again:   ";
+			cin>>temp;
+		}
+		temp-=1000;
+    
+		for(int i=temp;i<Number_Of;i++)
+		{
+			strcpy(Rsrv[i].Name,Rsrv[i+1].Name);
+			Rsrv[i].Destinetion=Rsrv[i+1].Destinetion;
+			Rsrv[i].payed=Rsrv[i+1].payed;
+			Rsrv[i].Reservetion_code=Rsrv[i+1].Reservetion_code;
+			Rsrv[i].RT=Rsrv[i+1].RT;
+		}
+	
+		cout<<"   Cancled succesfully";
+	}
+	else
+	    cout<<"   No reservetion avalable\n";
+	getch();
+	Menu();
+}
+void Pay_Reserve()
+{
+	int temp;
+    welcome();
+    if(Number_Of!=0)
+	{
+		cout<<"  Name reservetion code:  ";
+		cin>>temp;
+		while(temp<1000&&temp-1000>Number_Of)
+		{
+			cout<<"    Incorect reservetion code\n       try again:   ";
+			cin>>temp;
+		}
+		temp-=1000;
+		if(Rsrv[temp].payed==1)
+			cout<<"      You have already payed\n";
+		else
+		{
+			if(checT(Rsrv[temp].Destinetion,Number_Of)==1)
+				cout<<"       Succesfully paid\n";
+			else
+				cout<<"       Time up for reservetion\n";
+		}
+	}
+	else
+	    cout<<"   No reservetion avalable\n";
+	getch();
+	Menu();
+}
+void Save()
+{
+	welcome();
+	ofstream out;
+	out.open("Train.txt");
+	if(out.fail())
+	{
+		cout<<"    Unable to Save  . . . ";
+		getch();
+		Menu();
+	}
+	for(int i=0;i<Number_Of;i++)
+	{
+		out<<Rsrv[i].Name<<"~"
+		   <<Rsrv[i].Destinetion<<" "
+		   <<Rsrv[i].payed<<" "
+		   <<Rsrv[i].Reservetion_code<<" "
+
+		   <<Rsrv[i].RT->tm_sec<<" "
+		   <<Rsrv[i].RT->tm_min<<" "
+		   <<Rsrv[i].RT->tm_hour<<" "
+		   <<Rsrv[i].RT->tm_mday<<" "
+		   <<Rsrv[i].RT->tm_mon<<" "
+		   <<Rsrv[i].RT->tm_year<<" "
+		   <<Rsrv[i].RT->tm_wday<<" "
+		   <<Rsrv[i].RT->tm_yday<<" "
+		   <<Rsrv[i].RT->tm_isdst<<"\n";
+	}
+	out.close();
+	cout<<"   Done\n   press any key to continue . . . ";
+	getch();
+	Menu();
+}
+void Load()
+{
+	welcome();
+	ifstream in;
+	in.open("Train.txt");
+	while(!in.eof())
+	{
+		in.getline(Rsrv[Number_Of].Name,25,'~');
+		in>>Rsrv[Number_Of].Destinetion;
+		in.ignore();
+		in>>Rsrv[Number_Of].payed;
+		in.ignore();
+		in>>Rsrv[Number_Of].Reservetion_code;
+		in.ignore();
+		in>>Rsrv[Number_Of].RT->tm_sec;
+		in.ignore();
+		in>>Rsrv[Number_Of].RT->tm_min;
+		in.ignore();
+		in>>Rsrv[Number_Of].RT->tm_hour;
+		in.ignore();
+		in>>Rsrv[Number_Of].RT->tm_mday;
+		in.ignore();
+		in>>Rsrv[Number_Of].RT->tm_mon;
+		in.ignore();
+		in>>Rsrv[Number_Of].RT->tm_year;
+		in.ignore();
+		in>>Rsrv[Number_Of].RT->tm_wday;
+		in.ignore();
+		in>>Rsrv[Number_Of].RT->tm_yday;
+        in.ignore();
+		in>>Rsrv[Number_Of].RT->tm_isdst;
+		in.ignore();
+		Number_Of++;
+	}
+	Number_Of--;
+	cout<<"        Done\n      press any key . . . ";
+	getch();
+	Menu();
+}
+int checT(int code,int day)
+{
+	time_t t=time(0);
+	tm *now=localtime(&t);
+	int temp=(code-3)-now->tm_hour;
+	if(temp>=0||day>Rsrv[day].RT->tm_mday)
+		return 1;
+	else
+		return 0;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

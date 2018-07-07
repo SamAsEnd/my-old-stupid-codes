@@ -1,0 +1,404 @@
+#include <iostream.h>
+#include <fstream.h>
+#include <conio.h>
+#include <string.h>
+struct CONTACT
+{
+	char Name[25];
+	char Relation[25];
+	char E_Mail[25];
+	unsigned long Number;
+	char Town[25];
+};
+CONTACT contact[100];
+unsigned int Number_Of_User=0;
+
+void Start();
+void Add_Contact();
+void Update_Contact();
+void View_All_Contact();
+void Delete_Contact();
+void Load_From_File();
+void Save_To_File();
+int Check_Name(char temp[25],int Index_Of_Array);
+void main()
+{
+	Start();
+	clrscr();
+	cout<<"===============================================================================\n";
+	cout<<"==|                          Contact Management                             |==\n";
+	cout<<"===============================================================================\n";
+	cout<<"==|                          * Program Exit *                               |==\n";
+	}
+void Start()
+{
+	char Main_Menu_Choose;
+	clrscr();
+	cout<<"===============================================================================\n";
+	cout<<"==|                          Contact Management                             |==\n";
+	cout<<"===============================================================================\n";
+	cout<<"\n\t\t\tPress 0  ---  To Exit\n";
+	cout<<"\n\t\t\tPress 1  ---  To Add new Contact\n";
+	cout<<"\n\t\t\tPress 2  ---  To View All Contact\n";
+	cout<<"\n\t\t\tPress 3  ---  To Update Contact\n";
+	cout<<"\n\t\t\tPress 4  ---  To Delete Contact\n";
+	cout<<"\n\t\t\tPress 5  ---  To Load from file\n";
+	cout<<"\n\t\t\tPress 6  ---  To Save to file\n";
+	cout<<"\n\t\t\t    -----> ";
+	cin>>Main_Menu_Choose;
+	cin.ignore();
+	switch (Main_Menu_Choose)
+	{
+		case '0':
+			break;
+		case '1':
+			Add_Contact();
+			break;
+		case '2':
+			View_All_Contact();
+			break;
+		case '3':
+			Update_Contact();
+			break;
+		case '4':
+			Delete_Contact();
+			break;
+		case '5':
+			Load_From_File();
+			break;
+		case '6':
+			Save_To_File();
+			break;
+
+		default:
+			cout<<"\n\t Incorrect choose\n\t";
+			cout<<"Press any key to continue . . . ";
+			getch();
+			Start();
+		}
+	}
+
+void Add_Contact()
+{
+	char ch;
+	clrscr();
+	cout<<"===============================================================================\n";
+	cout<<"==|                          Adding Contact                                 |==\n";
+	cout<<"===============================================================================\n";
+	cout<<"\t\t  Enter the Contact name:    ";
+	cin.getline(contact[Number_Of_User].Name,25);
+	while(strcmp(contact[Number_Of_User].Name,"")==0)
+	{
+		cout<<"\t\t  Enter again:   ";
+		cin.getline(contact[Number_Of_User].Name,25);
+		}
+	if(Check_Name(contact[Number_Of_User].Name,Number_Of_User)!=-1)
+	{
+		cout<<"\t\t Name is used by another Contact\npress any key to enter again";
+		getch();
+		Add_Contact();
+		}
+	cout<<"\t\t  Enter the Relation of \""<<contact[Number_Of_User].Name<<"\":    ";
+	cin.getline(contact[Number_Of_User].Relation,25);
+	while(strcmp(contact[Number_Of_User].Relation,"")==0)
+	{
+		cout<<"\t\t  Enter again:   ";
+		cin.getline(contact[Number_Of_User].Relation,25);
+		}
+	cout<<"\t\t  Enter the E-mail of \""<<contact[Number_Of_User].Name<<"\":    ";
+	cin.getline(contact[Number_Of_User].E_Mail,25);
+	while(strcmp(contact[Number_Of_User].E_Mail,"")==0)
+	{
+		cout<<"\t\t  Enter again:   ";
+		cin.getline(contact[Number_Of_User].E_Mail,25);
+		}
+	cout<<"\t\tEnter the Phone Number of \""<<contact[Number_Of_User].Name<<"\":    ";
+	cin>>contact[Number_Of_User].Number;
+	cin.ignore();
+	cout<<"\t\t  Enter the Town of \""<<contact[Number_Of_User].Name<<"\":    ";
+	cin.getline(contact[Number_Of_User].Town,25);
+	while(strcmp(contact[Number_Of_User].Town,"")==0)
+	{
+		cout<<"\t\t  Enter again:   ";
+		cin.getline(contact[Number_Of_User].Town,25);
+		}
+	cout<<"\n\n\t\t"<<contact[Number_Of_User].Name<<" is added successfully\n\t\t";
+	Number_Of_User++;
+	cout<<"do you want to add another?\n\t\tpress   \"Y\" for YES or \"N\" for NO\n";
+	cin>>ch;
+	cin.ignore();
+	if(ch=='Y'||ch=='y')
+	{
+		clrscr();
+		Add_Contact();
+		}
+	else
+		Start();
+	}
+void Update_Contact()
+{
+	char temp[25];
+	clrscr();
+	cout<<"===============================================================================\n";
+	cout<<"==|                          Update Contacts                                |==\n";
+	cout<<"===============================================================================\n";
+	if(Number_Of_User>0)
+	{
+		cout<<"     Choose form the list below to Update";
+		for(int i=0;i<Number_Of_User;i++)
+		{
+			cout<<"\n\t - "<<contact[i].Name;
+			}
+		cout<<"\n\t\tEnter the Contact name:    ";
+		cin.getline(temp,25);
+		while(strcmp("",temp)==0)
+		{
+			cout<<"\t\t  Enter again:   ";
+			cin.getline(temp,25);
+			}
+		int t=Check_Name(temp,Number_Of_User);
+		if(t==-1)
+		{
+			cout<<"\t\tNO Contact AVALABLE WITH THIS NAME\n\tpress any key to update again . . . ";
+			getch();
+			Update_Contact();
+			}
+		else
+		{
+			cout<<"   Name  \tRelation\tE-main\tNumber\t  Town\n";
+			cout<<"   ======\t========\t======\t======\t  ======\n";
+			cout<<"   "<<contact[t].Name<<"\t      "<<contact[t].Relation<<"   \t"<<contact[t].E_Mail<<"\t"<<contact[t].Number<<"\t"<<contact[t].Town<<endl;
+			cout<<"\t\t  Enter the New Contact name:    ";
+			strcpy(contact[t].Name,"");
+			cin.getline(temp,25);
+			while(strcmp(temp,"")==0)
+			{
+				cout<<"\t\t  Enter again:   ";
+				cin.getline(temp,25);
+				}
+			if(Check_Name(temp,Number_Of_User)!=-1)
+			{
+				cout<<"\t\t Name is used by another Contact\n\tpress any key . . . ";
+				getch();
+				Update_Contact();
+				}
+			strcpy(contact[t].Name,temp);
+			cout<<"\t\t  Enter the new Relation of \""<<contact[t].Name<<"\":    ";
+			cin.getline(contact[t].Relation,25);
+			while(strcmp(contact[t].Relation,"")==0)
+			{
+				cout<<"\t\t  Enter again:   ";
+				cin.getline(contact[t].Relation,25);
+				}
+			cout<<"\t\t  Enter the new E-mail of \""<<contact[t].Name<<"\":    ";
+			cin.getline(contact[t].E_Mail,25);
+			while(strcmp(contact[t].E_Mail,"")==0)
+			{
+				cout<<"\t\t  Enter again:   ";
+				cin.getline(contact[t].E_Mail,25);
+				}
+			cout<<"\t\tEnter the Phone Number of \""<<contact[t].Name<<"\":    ";
+			cin>>contact[t].Number;
+			cin.ignore();
+			cout<<"\t\t  Enter the Town of \""<<contact[t].Name<<"\":    ";
+			cin.getline(contact[t].Town,25);
+			while(strcmp(contact[t].Town,"")==0)
+			{
+				cout<<"\t\t  Enter again:   ";
+				cin.getline(contact[t].Town,25);
+				}
+			cout<<"\n\n\t"<<contact[t].Name;
+			cout<<" Is Successfully UPDATED!!!\n";
+		}
+		cout<<"\tDo you want to UPDATED another Contact?\n\t\tpress   \"Y\" for YES or \"N\" for NO\n";
+		char ch;
+		cin>>ch;
+		cin.ignore();
+		if(ch=='Y'||ch=='y')
+			Update_Contact();
+		else
+			Start();
+		}
+	else
+	{
+	cout<<"\n\tNo contact avalable to update";
+	cout<<"\n\tPress any key to continue . . . ";
+	getch();
+	Start();
+	}
+}
+void View_All_Contact()
+{
+	clrscr();
+	cout<<"===============================================================================\n";
+	cout<<"==|                          View Contacts                                  |==\n";
+	cout<<"===============================================================================\n";
+	cout<<"   Name  \tRelation E-main\tNumber\t  Town\n";
+	cout<<"   ======\t======== ======\t======\t  ======\n";
+	if(Number_Of_User>0)
+	{
+		for(int i=0;i<Number_Of_User;i++)
+		{
+			cout<<"   "<<contact[i].Name<<"\t      "<<contact[i].Relation<<"   \t"<<contact[i].E_Mail<<"\t"<<contact[i].Number<<"\t"<<contact[i].Town<<endl;
+			}
+		}
+	else
+		cout<<"\t\t NO Contact AVALABLE!!";
+	cout<<"\nPress any key to continue . . . ";
+	getch();
+	Start();
+	}
+void Delete_Contact()
+{
+	int t;
+	char temp[25];
+	clrscr();
+	cout<<"===============================================================================\n";
+	cout<<"==|                        Delete Contacts                                  |==\n";
+	cout<<"===============================================================================\n";
+	if(Number_Of_User>0)
+	{
+		cout<<"        choose form the list below to delete";
+		for(int i=0;i<Number_Of_User;i++)
+		{
+			cout<<"\n\t - "<<contact[i].Name;
+			}
+		cout<<"\n\t\tEnter the Contact name:    ";
+		cin.getline(temp,25);
+		while(strcmp("",temp)==0)
+		{
+			cout<<"\t\t  Enter again:   ";
+			cin.getline(temp,25);
+			}
+		t=Check_Name(temp,Number_Of_User);
+		if(t==-1)
+		{
+			cout<<"\t\tNO Contact AVALABLE WITH THIS NAME\n";
+			}
+		else
+		{
+			for(int i=t;i<Number_Of_User;i++)
+			{
+					strcpy(contact[i].Name,contact[i+1].Name);
+					strcpy(contact[i].Relation,contact[i+1].Relation);
+					strcpy(contact[i].E_Mail,contact[i+1].E_Mail);
+					contact[i].Number=contact[i+1].Number;
+					strcpy(contact[i].Town,contact[i+1].Town);
+			}
+			Number_Of_User--;
+			cout<<"\t\tThe Contact Is Successfully DELETED!!!\n\t\t";
+		}
+		cout<<"Do you want to DELETE another Contact?\n\t\tpress   \"Y\" for YES or \"N\" for NO\n";
+		char ch;
+		cin>>ch;
+		cin.ignore();
+		if(ch=='Y'||ch=='y')
+			Delete_Contact();
+		else
+			Start();
+		}
+	else
+	{
+		cout<<"     NO Contact to delete";
+		cout<<"\nPress any key to continue . . . ";
+		getch();
+		Start();
+	}
+}
+void Load_From_File()
+{
+	ifstream INPUT;
+	INPUT.open("Contact.txt");
+	if(INPUT.fail())
+	{
+		cout<<"\t\tNO file recorded yet . . . ";
+		getch();
+		Start();
+		}
+	else if(INPUT.bad())
+	{
+		cout<<"\t\tFile could not be accessed . . . ";
+		getch();
+		Start();
+		}
+	else
+	{
+		clrscr();
+		cout<<"===============================================================================\n";
+		cout<<"==|                         LOAD FROM FILE                                  |==\n";
+		cout<<"===============================================================================\n";
+		while(!INPUT.eof())
+		{
+			INPUT.getline(contact[Number_Of_User].Name,25,'.');
+			INPUT.getline(contact[Number_Of_User].Relation,25,'.');
+			INPUT.getline(contact[Number_Of_User].E_Mail,25,'.');
+			INPUT>>contact[Number_Of_User].Number;
+			INPUT.getline(contact[Number_Of_User].Town,25,'.');
+			INPUT.ignore();
+			if(Check_Name(contact[Number_Of_User].Name,Number_Of_User)==-1)
+			Number_Of_User++;
+			}
+		INPUT.close();
+		Number_Of_User--;
+		cout<<"\t\tDONE";
+		cout<<"\nPress any key to continue . . . ";
+		getch();
+		Start();
+	}
+}
+void Save_To_File()
+{
+	ofstream OUTPUT;
+	OUTPUT.open("Contact.txt");
+	if(OUTPUT.fail())
+	{
+		cout<<"\t\tFailed To Save to file . . . ";
+		getch();
+		Start();
+		}
+	else if(OUTPUT.bad())
+	{
+		cout<<"\t\tFile could not be accessed . . . ";
+		getch();
+		Start();
+		}
+	else
+	{
+		clrscr();
+		cout<<"===============================================================================\n";
+		cout<<"==|                           SAVE TO FILE                                  |==\n";
+		cout<<"===============================================================================\n";
+		if(Number_Of_User==0)
+			cout<<"    No contact to save to file";
+		else
+		{
+			for(int i=0;i<=Number_Of_User-1;i++)
+			{
+				OUTPUT<<contact[i].Name<<"."<<contact[i].Relation<<"."<<contact[i].E_Mail<<"."<<contact[i].Number<<"."<<contact[i].Town<<endl;
+			}
+			cout<<"\t\tDONE";
+		}
+		cout<<"\n\tPress any key to continue . . . ";
+		getch();
+		Start();
+	}
+}
+int Check_Name(char temp[25],int Index_Of_Array)
+{
+	for(int i=0;i<=Index_Of_Array-1;i++)
+	{
+		if(strcmp(contact[i].Name,temp)==0)
+			return i;
+		}
+	return -1;
+}
+
+
+
+
+
+
+
+
+
+

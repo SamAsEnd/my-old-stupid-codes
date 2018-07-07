@@ -1,0 +1,5 @@
+while(scores[i] < 0){
+	scores[i] = 0;	
+	cout << "Enter scores[" << i << "] so it is >= 0: ";
+	cin >> scores[i];
+}
