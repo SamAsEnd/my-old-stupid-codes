@@ -1,0 +1,3202 @@
+case "Angle":
+	switch (from) {
+		case "Degree":
+			Degree Degree = new Degree(value);
+switch (to) {
+				case "Degree":
+					result = Degree.toDegree();
+					break;
+				case "Gradian":
+					result = Degree.toGradian();
+					break;
+				case "Radian":
+					result = Degree.toRadian();
+					break;
+}
+			break;
+		case "Gradian":
+			Gradian Gradian = new Gradian(value);
+switch (to) {
+				case "Degree":
+					result = Gradian.toDegree();
+					break;
+				case "Gradian":
+					result = Gradian.toGradian();
+					break;
+				case "Radian":
+					result = Gradian.toRadian();
+					break;
+}
+			break;
+		case "Radian":
+			Radian Radian = new Radian(value);
+switch (to) {
+				case "Degree":
+					result = Radian.toDegree();
+					break;
+				case "Gradian":
+					result = Radian.toGradian();
+					break;
+				case "Radian":
+					result = Radian.toRadian();
+					break;
+}
+			break;
+	}
+break;
+case "Time":
+	switch (from) {
+		case "Day":
+			Day Day = new Day(value);
+switch (to) {
+				case "Day":
+					result = Day.toDay();
+					break;
+				case "Hour":
+					result = Day.toHour();
+					break;
+				case "Microsecond":
+					result = Day.toMicrosecond();
+					break;
+				case "Millisecond":
+					result = Day.toMillisecond();
+					break;
+				case "Minute":
+					result = Day.toMinute();
+					break;
+				case "Month":
+					result = Day.toMonth();
+					break;
+				case "Second":
+					result = Day.toSecond();
+					break;
+				case "Week":
+					result = Day.toWeek();
+					break;
+				case "Year":
+					result = Day.toYear();
+					break;
+}
+			break;
+		case "Hour":
+			Hour Hour = new Hour(value);
+switch (to) {
+				case "Day":
+					result = Hour.toDay();
+					break;
+				case "Hour":
+					result = Hour.toHour();
+					break;
+				case "Microsecond":
+					result = Hour.toMicrosecond();
+					break;
+				case "Millisecond":
+					result = Hour.toMillisecond();
+					break;
+				case "Minute":
+					result = Hour.toMinute();
+					break;
+				case "Month":
+					result = Hour.toMonth();
+					break;
+				case "Second":
+					result = Hour.toSecond();
+					break;
+				case "Week":
+					result = Hour.toWeek();
+					break;
+				case "Year":
+					result = Hour.toYear();
+					break;
+}
+			break;
+		case "Microsecond":
+			Microsecond Microsecond = new Microsecond(value);
+switch (to) {
+				case "Day":
+					result = Microsecond.toDay();
+					break;
+				case "Hour":
+					result = Microsecond.toHour();
+					break;
+				case "Microsecond":
+					result = Microsecond.toMicrosecond();
+					break;
+				case "Millisecond":
+					result = Microsecond.toMillisecond();
+					break;
+				case "Minute":
+					result = Microsecond.toMinute();
+					break;
+				case "Month":
+					result = Microsecond.toMonth();
+					break;
+				case "Second":
+					result = Microsecond.toSecond();
+					break;
+				case "Week":
+					result = Microsecond.toWeek();
+					break;
+				case "Year":
+					result = Microsecond.toYear();
+					break;
+}
+			break;
+		case "Millisecond":
+			Millisecond Millisecond = new Millisecond(value);
+switch (to) {
+				case "Day":
+					result = Millisecond.toDay();
+					break;
+				case "Hour":
+					result = Millisecond.toHour();
+					break;
+				case "Microsecond":
+					result = Millisecond.toMicrosecond();
+					break;
+				case "Millisecond":
+					result = Millisecond.toMillisecond();
+					break;
+				case "Minute":
+					result = Millisecond.toMinute();
+					break;
+				case "Month":
+					result = Millisecond.toMonth();
+					break;
+				case "Second":
+					result = Millisecond.toSecond();
+					break;
+				case "Week":
+					result = Millisecond.toWeek();
+					break;
+				case "Year":
+					result = Millisecond.toYear();
+					break;
+}
+			break;
+		case "Minute":
+			Minute Minute = new Minute(value);
+switch (to) {
+				case "Day":
+					result = Minute.toDay();
+					break;
+				case "Hour":
+					result = Minute.toHour();
+					break;
+				case "Microsecond":
+					result = Minute.toMicrosecond();
+					break;
+				case "Millisecond":
+					result = Minute.toMillisecond();
+					break;
+				case "Minute":
+					result = Minute.toMinute();
+					break;
+				case "Month":
+					result = Minute.toMonth();
+					break;
+				case "Second":
+					result = Minute.toSecond();
+					break;
+				case "Week":
+					result = Minute.toWeek();
+					break;
+				case "Year":
+					result = Minute.toYear();
+					break;
+}
+			break;
+		case "Month":
+			Month Month = new Month(value);
+switch (to) {
+				case "Day":
+					result = Month.toDay();
+					break;
+				case "Hour":
+					result = Month.toHour();
+					break;
+				case "Microsecond":
+					result = Month.toMicrosecond();
+					break;
+				case "Millisecond":
+					result = Month.toMillisecond();
+					break;
+				case "Minute":
+					result = Month.toMinute();
+					break;
+				case "Month":
+					result = Month.toMonth();
+					break;
+				case "Second":
+					result = Month.toSecond();
+					break;
+				case "Week":
+					result = Month.toWeek();
+					break;
+				case "Year":
+					result = Month.toYear();
+					break;
+}
+			break;
+		case "Second":
+			Second Second = new Second(value);
+switch (to) {
+				case "Day":
+					result = Second.toDay();
+					break;
+				case "Hour":
+					result = Second.toHour();
+					break;
+				case "Microsecond":
+					result = Second.toMicrosecond();
+					break;
+				case "Millisecond":
+					result = Second.toMillisecond();
+					break;
+				case "Minute":
+					result = Second.toMinute();
+					break;
+				case "Month":
+					result = Second.toMonth();
+					break;
+				case "Second":
+					result = Second.toSecond();
+					break;
+				case "Week":
+					result = Second.toWeek();
+					break;
+				case "Year":
+					result = Second.toYear();
+					break;
+}
+			break;
+		case "Week":
+			Week Week = new Week(value);
+switch (to) {
+				case "Day":
+					result = Week.toDay();
+					break;
+				case "Hour":
+					result = Week.toHour();
+					break;
+				case "Microsecond":
+					result = Week.toMicrosecond();
+					break;
+				case "Millisecond":
+					result = Week.toMillisecond();
+					break;
+				case "Minute":
+					result = Week.toMinute();
+					break;
+				case "Month":
+					result = Week.toMonth();
+					break;
+				case "Second":
+					result = Week.toSecond();
+					break;
+				case "Week":
+					result = Week.toWeek();
+					break;
+				case "Year":
+					result = Week.toYear();
+					break;
+}
+			break;
+		case "Year":
+			Year Year = new Year(value);
+switch (to) {
+				case "Day":
+					result = Year.toDay();
+					break;
+				case "Hour":
+					result = Year.toHour();
+					break;
+				case "Microsecond":
+					result = Year.toMicrosecond();
+					break;
+				case "Millisecond":
+					result = Year.toMillisecond();
+					break;
+				case "Minute":
+					result = Year.toMinute();
+					break;
+				case "Month":
+					result = Year.toMonth();
+					break;
+				case "Second":
+					result = Year.toSecond();
+					break;
+				case "Week":
+					result = Year.toWeek();
+					break;
+				case "Year":
+					result = Year.toYear();
+					break;
+}
+			break;
+	}
+break;
+case "Volume":
+	switch (from) {
+		case "CubicCentimeter":
+			CubicCentimeter CubicCentimeter = new CubicCentimeter(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = CubicCentimeter.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = CubicCentimeter.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = CubicCentimeter.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = CubicCentimeter.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = CubicCentimeter.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = CubicCentimeter.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = CubicCentimeter.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = CubicCentimeter.toGallonUK();
+					break;
+				case "GallonUS":
+					result = CubicCentimeter.toGallonUS();
+					break;
+				case "Liter":
+					result = CubicCentimeter.toLiter();
+					break;
+				case "PintUK":
+					result = CubicCentimeter.toPintUK();
+					break;
+				case "PintUS":
+					result = CubicCentimeter.toPintUS();
+					break;
+				case "QuartUK":
+					result = CubicCentimeter.toQuartUK();
+					break;
+				case "QuartUS":
+					result = CubicCentimeter.toQuartUS();
+					break;
+}
+			break;
+		case "CubicFeet":
+			CubicFeet CubicFeet = new CubicFeet(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = CubicFeet.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = CubicFeet.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = CubicFeet.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = CubicFeet.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = CubicFeet.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = CubicFeet.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = CubicFeet.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = CubicFeet.toGallonUK();
+					break;
+				case "GallonUS":
+					result = CubicFeet.toGallonUS();
+					break;
+				case "Liter":
+					result = CubicFeet.toLiter();
+					break;
+				case "PintUK":
+					result = CubicFeet.toPintUK();
+					break;
+				case "PintUS":
+					result = CubicFeet.toPintUS();
+					break;
+				case "QuartUK":
+					result = CubicFeet.toQuartUK();
+					break;
+				case "QuartUS":
+					result = CubicFeet.toQuartUS();
+					break;
+}
+			break;
+		case "CubicInch":
+			CubicInch CubicInch = new CubicInch(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = CubicInch.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = CubicInch.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = CubicInch.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = CubicInch.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = CubicInch.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = CubicInch.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = CubicInch.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = CubicInch.toGallonUK();
+					break;
+				case "GallonUS":
+					result = CubicInch.toGallonUS();
+					break;
+				case "Liter":
+					result = CubicInch.toLiter();
+					break;
+				case "PintUK":
+					result = CubicInch.toPintUK();
+					break;
+				case "PintUS":
+					result = CubicInch.toPintUS();
+					break;
+				case "QuartUK":
+					result = CubicInch.toQuartUK();
+					break;
+				case "QuartUS":
+					result = CubicInch.toQuartUS();
+					break;
+}
+			break;
+		case "CubicMeter":
+			CubicMeter CubicMeter = new CubicMeter(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = CubicMeter.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = CubicMeter.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = CubicMeter.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = CubicMeter.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = CubicMeter.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = CubicMeter.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = CubicMeter.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = CubicMeter.toGallonUK();
+					break;
+				case "GallonUS":
+					result = CubicMeter.toGallonUS();
+					break;
+				case "Liter":
+					result = CubicMeter.toLiter();
+					break;
+				case "PintUK":
+					result = CubicMeter.toPintUK();
+					break;
+				case "PintUS":
+					result = CubicMeter.toPintUS();
+					break;
+				case "QuartUK":
+					result = CubicMeter.toQuartUK();
+					break;
+				case "QuartUS":
+					result = CubicMeter.toQuartUS();
+					break;
+}
+			break;
+		case "CubicYard":
+			CubicYard CubicYard = new CubicYard(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = CubicYard.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = CubicYard.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = CubicYard.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = CubicYard.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = CubicYard.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = CubicYard.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = CubicYard.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = CubicYard.toGallonUK();
+					break;
+				case "GallonUS":
+					result = CubicYard.toGallonUS();
+					break;
+				case "Liter":
+					result = CubicYard.toLiter();
+					break;
+				case "PintUK":
+					result = CubicYard.toPintUK();
+					break;
+				case "PintUS":
+					result = CubicYard.toPintUS();
+					break;
+				case "QuartUK":
+					result = CubicYard.toQuartUK();
+					break;
+				case "QuartUS":
+					result = CubicYard.toQuartUS();
+					break;
+}
+			break;
+		case "FluidOunceUK":
+			FluidOunceUK FluidOunceUK = new FluidOunceUK(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = FluidOunceUK.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = FluidOunceUK.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = FluidOunceUK.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = FluidOunceUK.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = FluidOunceUK.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = FluidOunceUK.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = FluidOunceUK.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = FluidOunceUK.toGallonUK();
+					break;
+				case "GallonUS":
+					result = FluidOunceUK.toGallonUS();
+					break;
+				case "Liter":
+					result = FluidOunceUK.toLiter();
+					break;
+				case "PintUK":
+					result = FluidOunceUK.toPintUK();
+					break;
+				case "PintUS":
+					result = FluidOunceUK.toPintUS();
+					break;
+				case "QuartUK":
+					result = FluidOunceUK.toQuartUK();
+					break;
+				case "QuartUS":
+					result = FluidOunceUK.toQuartUS();
+					break;
+}
+			break;
+		case "FluidOunceUS":
+			FluidOunceUS FluidOunceUS = new FluidOunceUS(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = FluidOunceUS.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = FluidOunceUS.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = FluidOunceUS.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = FluidOunceUS.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = FluidOunceUS.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = FluidOunceUS.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = FluidOunceUS.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = FluidOunceUS.toGallonUK();
+					break;
+				case "GallonUS":
+					result = FluidOunceUS.toGallonUS();
+					break;
+				case "Liter":
+					result = FluidOunceUS.toLiter();
+					break;
+				case "PintUK":
+					result = FluidOunceUS.toPintUK();
+					break;
+				case "PintUS":
+					result = FluidOunceUS.toPintUS();
+					break;
+				case "QuartUK":
+					result = FluidOunceUS.toQuartUK();
+					break;
+				case "QuartUS":
+					result = FluidOunceUS.toQuartUS();
+					break;
+}
+			break;
+		case "GallonUK":
+			GallonUK GallonUK = new GallonUK(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = GallonUK.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = GallonUK.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = GallonUK.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = GallonUK.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = GallonUK.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = GallonUK.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = GallonUK.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = GallonUK.toGallonUK();
+					break;
+				case "GallonUS":
+					result = GallonUK.toGallonUS();
+					break;
+				case "Liter":
+					result = GallonUK.toLiter();
+					break;
+				case "PintUK":
+					result = GallonUK.toPintUK();
+					break;
+				case "PintUS":
+					result = GallonUK.toPintUS();
+					break;
+				case "QuartUK":
+					result = GallonUK.toQuartUK();
+					break;
+				case "QuartUS":
+					result = GallonUK.toQuartUS();
+					break;
+}
+			break;
+		case "GallonUS":
+			GallonUS GallonUS = new GallonUS(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = GallonUS.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = GallonUS.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = GallonUS.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = GallonUS.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = GallonUS.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = GallonUS.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = GallonUS.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = GallonUS.toGallonUK();
+					break;
+				case "GallonUS":
+					result = GallonUS.toGallonUS();
+					break;
+				case "Liter":
+					result = GallonUS.toLiter();
+					break;
+				case "PintUK":
+					result = GallonUS.toPintUK();
+					break;
+				case "PintUS":
+					result = GallonUS.toPintUS();
+					break;
+				case "QuartUK":
+					result = GallonUS.toQuartUK();
+					break;
+				case "QuartUS":
+					result = GallonUS.toQuartUS();
+					break;
+}
+			break;
+		case "Liter":
+			Liter Liter = new Liter(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = Liter.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = Liter.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = Liter.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = Liter.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = Liter.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = Liter.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = Liter.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = Liter.toGallonUK();
+					break;
+				case "GallonUS":
+					result = Liter.toGallonUS();
+					break;
+				case "Liter":
+					result = Liter.toLiter();
+					break;
+				case "PintUK":
+					result = Liter.toPintUK();
+					break;
+				case "PintUS":
+					result = Liter.toPintUS();
+					break;
+				case "QuartUK":
+					result = Liter.toQuartUK();
+					break;
+				case "QuartUS":
+					result = Liter.toQuartUS();
+					break;
+}
+			break;
+		case "PintUK":
+			PintUK PintUK = new PintUK(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = PintUK.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = PintUK.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = PintUK.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = PintUK.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = PintUK.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = PintUK.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = PintUK.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = PintUK.toGallonUK();
+					break;
+				case "GallonUS":
+					result = PintUK.toGallonUS();
+					break;
+				case "Liter":
+					result = PintUK.toLiter();
+					break;
+				case "PintUK":
+					result = PintUK.toPintUK();
+					break;
+				case "PintUS":
+					result = PintUK.toPintUS();
+					break;
+				case "QuartUK":
+					result = PintUK.toQuartUK();
+					break;
+				case "QuartUS":
+					result = PintUK.toQuartUS();
+					break;
+}
+			break;
+		case "PintUS":
+			PintUS PintUS = new PintUS(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = PintUS.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = PintUS.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = PintUS.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = PintUS.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = PintUS.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = PintUS.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = PintUS.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = PintUS.toGallonUK();
+					break;
+				case "GallonUS":
+					result = PintUS.toGallonUS();
+					break;
+				case "Liter":
+					result = PintUS.toLiter();
+					break;
+				case "PintUK":
+					result = PintUS.toPintUK();
+					break;
+				case "PintUS":
+					result = PintUS.toPintUS();
+					break;
+				case "QuartUK":
+					result = PintUS.toQuartUK();
+					break;
+				case "QuartUS":
+					result = PintUS.toQuartUS();
+					break;
+}
+			break;
+		case "QuartUK":
+			QuartUK QuartUK = new QuartUK(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = QuartUK.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = QuartUK.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = QuartUK.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = QuartUK.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = QuartUK.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = QuartUK.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = QuartUK.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = QuartUK.toGallonUK();
+					break;
+				case "GallonUS":
+					result = QuartUK.toGallonUS();
+					break;
+				case "Liter":
+					result = QuartUK.toLiter();
+					break;
+				case "PintUK":
+					result = QuartUK.toPintUK();
+					break;
+				case "PintUS":
+					result = QuartUK.toPintUS();
+					break;
+				case "QuartUK":
+					result = QuartUK.toQuartUK();
+					break;
+				case "QuartUS":
+					result = QuartUK.toQuartUS();
+					break;
+}
+			break;
+		case "QuartUS":
+			QuartUS QuartUS = new QuartUS(value);
+switch (to) {
+				case "CubicCentimeter":
+					result = QuartUS.toCubicCentimeter();
+					break;
+				case "CubicFeet":
+					result = QuartUS.toCubicFeet();
+					break;
+				case "CubicInch":
+					result = QuartUS.toCubicInch();
+					break;
+				case "CubicMeter":
+					result = QuartUS.toCubicMeter();
+					break;
+				case "CubicYard":
+					result = QuartUS.toCubicYard();
+					break;
+				case "FluidOunceUK":
+					result = QuartUS.toFluidOunceUK();
+					break;
+				case "FluidOunceUS":
+					result = QuartUS.toFluidOunceUS();
+					break;
+				case "GallonUK":
+					result = QuartUS.toGallonUK();
+					break;
+				case "GallonUS":
+					result = QuartUS.toGallonUS();
+					break;
+				case "Liter":
+					result = QuartUS.toLiter();
+					break;
+				case "PintUK":
+					result = QuartUS.toPintUK();
+					break;
+				case "PintUS":
+					result = QuartUS.toPintUS();
+					break;
+				case "QuartUK":
+					result = QuartUS.toQuartUK();
+					break;
+				case "QuartUS":
+					result = QuartUS.toQuartUS();
+					break;
+}
+			break;
+	}
+break;
+case "Power":
+	switch (from) {
+		case "BTUminute":
+			BTUminute BTUminute = new BTUminute(value);
+switch (to) {
+				case "BTUminute":
+					result = BTUminute.toBTUminute();
+					break;
+				case "FootPoundminute":
+					result = BTUminute.toFootPoundminute();
+					break;
+				case "Horsepower":
+					result = BTUminute.toHorsepower();
+					break;
+				case "Kilowatt":
+					result = BTUminute.toKilowatt();
+					break;
+				case "Watt":
+					result = BTUminute.toWatt();
+					break;
+}
+			break;
+		case "FootPoundminute":
+			FootPoundminute FootPoundminute = new FootPoundminute(value);
+switch (to) {
+				case "BTUminute":
+					result = FootPoundminute.toBTUminute();
+					break;
+				case "FootPoundminute":
+					result = FootPoundminute.toFootPoundminute();
+					break;
+				case "Horsepower":
+					result = FootPoundminute.toHorsepower();
+					break;
+				case "Kilowatt":
+					result = FootPoundminute.toKilowatt();
+					break;
+				case "Watt":
+					result = FootPoundminute.toWatt();
+					break;
+}
+			break;
+		case "Horsepower":
+			Horsepower Horsepower = new Horsepower(value);
+switch (to) {
+				case "BTUminute":
+					result = Horsepower.toBTUminute();
+					break;
+				case "FootPoundminute":
+					result = Horsepower.toFootPoundminute();
+					break;
+				case "Horsepower":
+					result = Horsepower.toHorsepower();
+					break;
+				case "Kilowatt":
+					result = Horsepower.toKilowatt();
+					break;
+				case "Watt":
+					result = Horsepower.toWatt();
+					break;
+}
+			break;
+		case "Kilowatt":
+			Kilowatt Kilowatt = new Kilowatt(value);
+switch (to) {
+				case "BTUminute":
+					result = Kilowatt.toBTUminute();
+					break;
+				case "FootPoundminute":
+					result = Kilowatt.toFootPoundminute();
+					break;
+				case "Horsepower":
+					result = Kilowatt.toHorsepower();
+					break;
+				case "Kilowatt":
+					result = Kilowatt.toKilowatt();
+					break;
+				case "Watt":
+					result = Kilowatt.toWatt();
+					break;
+}
+			break;
+		case "Watt":
+			Watt Watt = new Watt(value);
+switch (to) {
+				case "BTUminute":
+					result = Watt.toBTUminute();
+					break;
+				case "FootPoundminute":
+					result = Watt.toFootPoundminute();
+					break;
+				case "Horsepower":
+					result = Watt.toHorsepower();
+					break;
+				case "Kilowatt":
+					result = Watt.toKilowatt();
+					break;
+				case "Watt":
+					result = Watt.toWatt();
+					break;
+}
+			break;
+	}
+break;
+case "Energy":
+	switch (from) {
+		case "BritishThermalUnit":
+			BritishThermalUnit BritishThermalUnit = new BritishThermalUnit(value);
+switch (to) {
+				case "BritishThermalUnit":
+					result = BritishThermalUnit.toBritishThermalUnit();
+					break;
+				case "Calorie":
+					result = BritishThermalUnit.toCalorie();
+					break;
+				case "ElectronVolts":
+					result = BritishThermalUnit.toElectronVolts();
+					break;
+				case "FootPound":
+					result = BritishThermalUnit.toFootPound();
+					break;
+				case "Joule":
+					result = BritishThermalUnit.toJoule();
+					break;
+				case "Kilocalorie":
+					result = BritishThermalUnit.toKilocalorie();
+					break;
+				case "Kilojoule":
+					result = BritishThermalUnit.toKilojoule();
+					break;
+}
+			break;
+		case "Calorie":
+			Calorie Calorie = new Calorie(value);
+switch (to) {
+				case "BritishThermalUnit":
+					result = Calorie.toBritishThermalUnit();
+					break;
+				case "Calorie":
+					result = Calorie.toCalorie();
+					break;
+				case "ElectronVolts":
+					result = Calorie.toElectronVolts();
+					break;
+				case "FootPound":
+					result = Calorie.toFootPound();
+					break;
+				case "Joule":
+					result = Calorie.toJoule();
+					break;
+				case "Kilocalorie":
+					result = Calorie.toKilocalorie();
+					break;
+				case "Kilojoule":
+					result = Calorie.toKilojoule();
+					break;
+}
+			break;
+		case "ElectronVolts":
+			ElectronVolts ElectronVolts = new ElectronVolts(value);
+switch (to) {
+				case "BritishThermalUnit":
+					result = ElectronVolts.toBritishThermalUnit();
+					break;
+				case "Calorie":
+					result = ElectronVolts.toCalorie();
+					break;
+				case "ElectronVolts":
+					result = ElectronVolts.toElectronVolts();
+					break;
+				case "FootPound":
+					result = ElectronVolts.toFootPound();
+					break;
+				case "Joule":
+					result = ElectronVolts.toJoule();
+					break;
+				case "Kilocalorie":
+					result = ElectronVolts.toKilocalorie();
+					break;
+				case "Kilojoule":
+					result = ElectronVolts.toKilojoule();
+					break;
+}
+			break;
+		case "FootPound":
+			FootPound FootPound = new FootPound(value);
+switch (to) {
+				case "BritishThermalUnit":
+					result = FootPound.toBritishThermalUnit();
+					break;
+				case "Calorie":
+					result = FootPound.toCalorie();
+					break;
+				case "ElectronVolts":
+					result = FootPound.toElectronVolts();
+					break;
+				case "FootPound":
+					result = FootPound.toFootPound();
+					break;
+				case "Joule":
+					result = FootPound.toJoule();
+					break;
+				case "Kilocalorie":
+					result = FootPound.toKilocalorie();
+					break;
+				case "Kilojoule":
+					result = FootPound.toKilojoule();
+					break;
+}
+			break;
+		case "Joule":
+			Joule Joule = new Joule(value);
+switch (to) {
+				case "BritishThermalUnit":
+					result = Joule.toBritishThermalUnit();
+					break;
+				case "Calorie":
+					result = Joule.toCalorie();
+					break;
+				case "ElectronVolts":
+					result = Joule.toElectronVolts();
+					break;
+				case "FootPound":
+					result = Joule.toFootPound();
+					break;
+				case "Joule":
+					result = Joule.toJoule();
+					break;
+				case "Kilocalorie":
+					result = Joule.toKilocalorie();
+					break;
+				case "Kilojoule":
+					result = Joule.toKilojoule();
+					break;
+}
+			break;
+		case "Kilocalorie":
+			Kilocalorie Kilocalorie = new Kilocalorie(value);
+switch (to) {
+				case "BritishThermalUnit":
+					result = Kilocalorie.toBritishThermalUnit();
+					break;
+				case "Calorie":
+					result = Kilocalorie.toCalorie();
+					break;
+				case "ElectronVolts":
+					result = Kilocalorie.toElectronVolts();
+					break;
+				case "FootPound":
+					result = Kilocalorie.toFootPound();
+					break;
+				case "Joule":
+					result = Kilocalorie.toJoule();
+					break;
+				case "Kilocalorie":
+					result = Kilocalorie.toKilocalorie();
+					break;
+				case "Kilojoule":
+					result = Kilocalorie.toKilojoule();
+					break;
+}
+			break;
+		case "Kilojoule":
+			Kilojoule Kilojoule = new Kilojoule(value);
+switch (to) {
+				case "BritishThermalUnit":
+					result = Kilojoule.toBritishThermalUnit();
+					break;
+				case "Calorie":
+					result = Kilojoule.toCalorie();
+					break;
+				case "ElectronVolts":
+					result = Kilojoule.toElectronVolts();
+					break;
+				case "FootPound":
+					result = Kilojoule.toFootPound();
+					break;
+				case "Joule":
+					result = Kilojoule.toJoule();
+					break;
+				case "Kilocalorie":
+					result = Kilojoule.toKilocalorie();
+					break;
+				case "Kilojoule":
+					result = Kilojoule.toKilojoule();
+					break;
+}
+			break;
+	}
+break;
+case "Numeric":
+	switch (from) {
+		case "Binary":
+			Binary Binary = new Binary(value);
+switch (to) {
+				case "Binary":
+					result = Binary.toBinary();
+					break;
+				case "HexaDecimal":
+					result = Binary.toHexaDecimal();
+					break;
+				case "Decimal":
+					result = Binary.toDecimal();
+					break;
+}
+			break;
+		case "HexaDecimal":
+			HexaDecimal HexaDecimal = new HexaDecimal(value);
+switch (to) {
+				case "Binary":
+					result = HexaDecimal.toBinary();
+					break;
+				case "HexaDecimal":
+					result = HexaDecimal.toHexaDecimal();
+					break;
+				case "Decimal":
+					result = HexaDecimal.toDecimal();
+					break;
+}
+			break;
+		case "Decimal":
+			Decimal Decimal = new Decimal(value);
+switch (to) {
+				case "Binary":
+					result = Decimal.toBinary();
+					break;
+				case "HexaDecimal":
+					result = Decimal.toHexaDecimal();
+					break;
+				case "Decimal":
+					result = Decimal.toDecimal();
+					break;
+}
+			break;
+	}
+break;
+case "Length":
+	switch (from) {
+		case "Angstrom":
+			Angstrom Angstrom = new Angstrom(value);
+switch (to) {
+				case "Angstrom":
+					result = Angstrom.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Angstrom.toCentimeter();
+					break;
+				case "Chain":
+					result = Angstrom.toChain();
+					break;
+				case "Fathom":
+					result = Angstrom.toFathom();
+					break;
+				case "Feet":
+					result = Angstrom.toFeet();
+					break;
+				case "Hand":
+					result = Angstrom.toHand();
+					break;
+				case "Inch":
+					result = Angstrom.toInch();
+					break;
+				case "Kilometer":
+					result = Angstrom.toKilometer();
+					break;
+				case "Link":
+					result = Angstrom.toLink();
+					break;
+				case "Meter":
+					result = Angstrom.toMeter();
+					break;
+				case "Micron":
+					result = Angstrom.toMicron();
+					break;
+				case "Mile":
+					result = Angstrom.toMile();
+					break;
+				case "MilliMeter":
+					result = Angstrom.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Angstrom.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Angstrom.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Angstrom.toPICA();
+					break;
+				case "Rods":
+					result = Angstrom.toRods();
+					break;
+				case "Span":
+					result = Angstrom.toSpan();
+					break;
+				case "Yard":
+					result = Angstrom.toYard();
+					break;
+}
+			break;
+		case "Centimeter":
+			Centimeter Centimeter = new Centimeter(value);
+switch (to) {
+				case "Angstrom":
+					result = Centimeter.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Centimeter.toCentimeter();
+					break;
+				case "Chain":
+					result = Centimeter.toChain();
+					break;
+				case "Fathom":
+					result = Centimeter.toFathom();
+					break;
+				case "Feet":
+					result = Centimeter.toFeet();
+					break;
+				case "Hand":
+					result = Centimeter.toHand();
+					break;
+				case "Inch":
+					result = Centimeter.toInch();
+					break;
+				case "Kilometer":
+					result = Centimeter.toKilometer();
+					break;
+				case "Link":
+					result = Centimeter.toLink();
+					break;
+				case "Meter":
+					result = Centimeter.toMeter();
+					break;
+				case "Micron":
+					result = Centimeter.toMicron();
+					break;
+				case "Mile":
+					result = Centimeter.toMile();
+					break;
+				case "MilliMeter":
+					result = Centimeter.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Centimeter.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Centimeter.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Centimeter.toPICA();
+					break;
+				case "Rods":
+					result = Centimeter.toRods();
+					break;
+				case "Span":
+					result = Centimeter.toSpan();
+					break;
+				case "Yard":
+					result = Centimeter.toYard();
+					break;
+}
+			break;
+		case "Chain":
+			Chain Chain = new Chain(value);
+switch (to) {
+				case "Angstrom":
+					result = Chain.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Chain.toCentimeter();
+					break;
+				case "Chain":
+					result = Chain.toChain();
+					break;
+				case "Fathom":
+					result = Chain.toFathom();
+					break;
+				case "Feet":
+					result = Chain.toFeet();
+					break;
+				case "Hand":
+					result = Chain.toHand();
+					break;
+				case "Inch":
+					result = Chain.toInch();
+					break;
+				case "Kilometer":
+					result = Chain.toKilometer();
+					break;
+				case "Link":
+					result = Chain.toLink();
+					break;
+				case "Meter":
+					result = Chain.toMeter();
+					break;
+				case "Micron":
+					result = Chain.toMicron();
+					break;
+				case "Mile":
+					result = Chain.toMile();
+					break;
+				case "MilliMeter":
+					result = Chain.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Chain.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Chain.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Chain.toPICA();
+					break;
+				case "Rods":
+					result = Chain.toRods();
+					break;
+				case "Span":
+					result = Chain.toSpan();
+					break;
+				case "Yard":
+					result = Chain.toYard();
+					break;
+}
+			break;
+		case "Fathom":
+			Fathom Fathom = new Fathom(value);
+switch (to) {
+				case "Angstrom":
+					result = Fathom.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Fathom.toCentimeter();
+					break;
+				case "Chain":
+					result = Fathom.toChain();
+					break;
+				case "Fathom":
+					result = Fathom.toFathom();
+					break;
+				case "Feet":
+					result = Fathom.toFeet();
+					break;
+				case "Hand":
+					result = Fathom.toHand();
+					break;
+				case "Inch":
+					result = Fathom.toInch();
+					break;
+				case "Kilometer":
+					result = Fathom.toKilometer();
+					break;
+				case "Link":
+					result = Fathom.toLink();
+					break;
+				case "Meter":
+					result = Fathom.toMeter();
+					break;
+				case "Micron":
+					result = Fathom.toMicron();
+					break;
+				case "Mile":
+					result = Fathom.toMile();
+					break;
+				case "MilliMeter":
+					result = Fathom.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Fathom.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Fathom.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Fathom.toPICA();
+					break;
+				case "Rods":
+					result = Fathom.toRods();
+					break;
+				case "Span":
+					result = Fathom.toSpan();
+					break;
+				case "Yard":
+					result = Fathom.toYard();
+					break;
+}
+			break;
+		case "Feet":
+			Feet Feet = new Feet(value);
+switch (to) {
+				case "Angstrom":
+					result = Feet.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Feet.toCentimeter();
+					break;
+				case "Chain":
+					result = Feet.toChain();
+					break;
+				case "Fathom":
+					result = Feet.toFathom();
+					break;
+				case "Feet":
+					result = Feet.toFeet();
+					break;
+				case "Hand":
+					result = Feet.toHand();
+					break;
+				case "Inch":
+					result = Feet.toInch();
+					break;
+				case "Kilometer":
+					result = Feet.toKilometer();
+					break;
+				case "Link":
+					result = Feet.toLink();
+					break;
+				case "Meter":
+					result = Feet.toMeter();
+					break;
+				case "Micron":
+					result = Feet.toMicron();
+					break;
+				case "Mile":
+					result = Feet.toMile();
+					break;
+				case "MilliMeter":
+					result = Feet.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Feet.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Feet.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Feet.toPICA();
+					break;
+				case "Rods":
+					result = Feet.toRods();
+					break;
+				case "Span":
+					result = Feet.toSpan();
+					break;
+				case "Yard":
+					result = Feet.toYard();
+					break;
+}
+			break;
+		case "Hand":
+			Hand Hand = new Hand(value);
+switch (to) {
+				case "Angstrom":
+					result = Hand.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Hand.toCentimeter();
+					break;
+				case "Chain":
+					result = Hand.toChain();
+					break;
+				case "Fathom":
+					result = Hand.toFathom();
+					break;
+				case "Feet":
+					result = Hand.toFeet();
+					break;
+				case "Hand":
+					result = Hand.toHand();
+					break;
+				case "Inch":
+					result = Hand.toInch();
+					break;
+				case "Kilometer":
+					result = Hand.toKilometer();
+					break;
+				case "Link":
+					result = Hand.toLink();
+					break;
+				case "Meter":
+					result = Hand.toMeter();
+					break;
+				case "Micron":
+					result = Hand.toMicron();
+					break;
+				case "Mile":
+					result = Hand.toMile();
+					break;
+				case "MilliMeter":
+					result = Hand.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Hand.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Hand.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Hand.toPICA();
+					break;
+				case "Rods":
+					result = Hand.toRods();
+					break;
+				case "Span":
+					result = Hand.toSpan();
+					break;
+				case "Yard":
+					result = Hand.toYard();
+					break;
+}
+			break;
+		case "Inch":
+			Inch Inch = new Inch(value);
+switch (to) {
+				case "Angstrom":
+					result = Inch.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Inch.toCentimeter();
+					break;
+				case "Chain":
+					result = Inch.toChain();
+					break;
+				case "Fathom":
+					result = Inch.toFathom();
+					break;
+				case "Feet":
+					result = Inch.toFeet();
+					break;
+				case "Hand":
+					result = Inch.toHand();
+					break;
+				case "Inch":
+					result = Inch.toInch();
+					break;
+				case "Kilometer":
+					result = Inch.toKilometer();
+					break;
+				case "Link":
+					result = Inch.toLink();
+					break;
+				case "Meter":
+					result = Inch.toMeter();
+					break;
+				case "Micron":
+					result = Inch.toMicron();
+					break;
+				case "Mile":
+					result = Inch.toMile();
+					break;
+				case "MilliMeter":
+					result = Inch.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Inch.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Inch.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Inch.toPICA();
+					break;
+				case "Rods":
+					result = Inch.toRods();
+					break;
+				case "Span":
+					result = Inch.toSpan();
+					break;
+				case "Yard":
+					result = Inch.toYard();
+					break;
+}
+			break;
+		case "Kilometer":
+			Kilometer Kilometer = new Kilometer(value);
+switch (to) {
+				case "Angstrom":
+					result = Kilometer.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Kilometer.toCentimeter();
+					break;
+				case "Chain":
+					result = Kilometer.toChain();
+					break;
+				case "Fathom":
+					result = Kilometer.toFathom();
+					break;
+				case "Feet":
+					result = Kilometer.toFeet();
+					break;
+				case "Hand":
+					result = Kilometer.toHand();
+					break;
+				case "Inch":
+					result = Kilometer.toInch();
+					break;
+				case "Kilometer":
+					result = Kilometer.toKilometer();
+					break;
+				case "Link":
+					result = Kilometer.toLink();
+					break;
+				case "Meter":
+					result = Kilometer.toMeter();
+					break;
+				case "Micron":
+					result = Kilometer.toMicron();
+					break;
+				case "Mile":
+					result = Kilometer.toMile();
+					break;
+				case "MilliMeter":
+					result = Kilometer.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Kilometer.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Kilometer.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Kilometer.toPICA();
+					break;
+				case "Rods":
+					result = Kilometer.toRods();
+					break;
+				case "Span":
+					result = Kilometer.toSpan();
+					break;
+				case "Yard":
+					result = Kilometer.toYard();
+					break;
+}
+			break;
+		case "Link":
+			Link Link = new Link(value);
+switch (to) {
+				case "Angstrom":
+					result = Link.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Link.toCentimeter();
+					break;
+				case "Chain":
+					result = Link.toChain();
+					break;
+				case "Fathom":
+					result = Link.toFathom();
+					break;
+				case "Feet":
+					result = Link.toFeet();
+					break;
+				case "Hand":
+					result = Link.toHand();
+					break;
+				case "Inch":
+					result = Link.toInch();
+					break;
+				case "Kilometer":
+					result = Link.toKilometer();
+					break;
+				case "Link":
+					result = Link.toLink();
+					break;
+				case "Meter":
+					result = Link.toMeter();
+					break;
+				case "Micron":
+					result = Link.toMicron();
+					break;
+				case "Mile":
+					result = Link.toMile();
+					break;
+				case "MilliMeter":
+					result = Link.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Link.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Link.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Link.toPICA();
+					break;
+				case "Rods":
+					result = Link.toRods();
+					break;
+				case "Span":
+					result = Link.toSpan();
+					break;
+				case "Yard":
+					result = Link.toYard();
+					break;
+}
+			break;
+		case "Meter":
+			Meter Meter = new Meter(value);
+switch (to) {
+				case "Angstrom":
+					result = Meter.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Meter.toCentimeter();
+					break;
+				case "Chain":
+					result = Meter.toChain();
+					break;
+				case "Fathom":
+					result = Meter.toFathom();
+					break;
+				case "Feet":
+					result = Meter.toFeet();
+					break;
+				case "Hand":
+					result = Meter.toHand();
+					break;
+				case "Inch":
+					result = Meter.toInch();
+					break;
+				case "Kilometer":
+					result = Meter.toKilometer();
+					break;
+				case "Link":
+					result = Meter.toLink();
+					break;
+				case "Meter":
+					result = Meter.toMeter();
+					break;
+				case "Micron":
+					result = Meter.toMicron();
+					break;
+				case "Mile":
+					result = Meter.toMile();
+					break;
+				case "MilliMeter":
+					result = Meter.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Meter.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Meter.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Meter.toPICA();
+					break;
+				case "Rods":
+					result = Meter.toRods();
+					break;
+				case "Span":
+					result = Meter.toSpan();
+					break;
+				case "Yard":
+					result = Meter.toYard();
+					break;
+}
+			break;
+		case "Micron":
+			Micron Micron = new Micron(value);
+switch (to) {
+				case "Angstrom":
+					result = Micron.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Micron.toCentimeter();
+					break;
+				case "Chain":
+					result = Micron.toChain();
+					break;
+				case "Fathom":
+					result = Micron.toFathom();
+					break;
+				case "Feet":
+					result = Micron.toFeet();
+					break;
+				case "Hand":
+					result = Micron.toHand();
+					break;
+				case "Inch":
+					result = Micron.toInch();
+					break;
+				case "Kilometer":
+					result = Micron.toKilometer();
+					break;
+				case "Link":
+					result = Micron.toLink();
+					break;
+				case "Meter":
+					result = Micron.toMeter();
+					break;
+				case "Micron":
+					result = Micron.toMicron();
+					break;
+				case "Mile":
+					result = Micron.toMile();
+					break;
+				case "MilliMeter":
+					result = Micron.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Micron.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Micron.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Micron.toPICA();
+					break;
+				case "Rods":
+					result = Micron.toRods();
+					break;
+				case "Span":
+					result = Micron.toSpan();
+					break;
+				case "Yard":
+					result = Micron.toYard();
+					break;
+}
+			break;
+		case "Mile":
+			Mile Mile = new Mile(value);
+switch (to) {
+				case "Angstrom":
+					result = Mile.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Mile.toCentimeter();
+					break;
+				case "Chain":
+					result = Mile.toChain();
+					break;
+				case "Fathom":
+					result = Mile.toFathom();
+					break;
+				case "Feet":
+					result = Mile.toFeet();
+					break;
+				case "Hand":
+					result = Mile.toHand();
+					break;
+				case "Inch":
+					result = Mile.toInch();
+					break;
+				case "Kilometer":
+					result = Mile.toKilometer();
+					break;
+				case "Link":
+					result = Mile.toLink();
+					break;
+				case "Meter":
+					result = Mile.toMeter();
+					break;
+				case "Micron":
+					result = Mile.toMicron();
+					break;
+				case "Mile":
+					result = Mile.toMile();
+					break;
+				case "MilliMeter":
+					result = Mile.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Mile.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Mile.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Mile.toPICA();
+					break;
+				case "Rods":
+					result = Mile.toRods();
+					break;
+				case "Span":
+					result = Mile.toSpan();
+					break;
+				case "Yard":
+					result = Mile.toYard();
+					break;
+}
+			break;
+		case "MilliMeter":
+			MilliMeter MilliMeter = new MilliMeter(value);
+switch (to) {
+				case "Angstrom":
+					result = MilliMeter.toAngstrom();
+					break;
+				case "Centimeter":
+					result = MilliMeter.toCentimeter();
+					break;
+				case "Chain":
+					result = MilliMeter.toChain();
+					break;
+				case "Fathom":
+					result = MilliMeter.toFathom();
+					break;
+				case "Feet":
+					result = MilliMeter.toFeet();
+					break;
+				case "Hand":
+					result = MilliMeter.toHand();
+					break;
+				case "Inch":
+					result = MilliMeter.toInch();
+					break;
+				case "Kilometer":
+					result = MilliMeter.toKilometer();
+					break;
+				case "Link":
+					result = MilliMeter.toLink();
+					break;
+				case "Meter":
+					result = MilliMeter.toMeter();
+					break;
+				case "Micron":
+					result = MilliMeter.toMicron();
+					break;
+				case "Mile":
+					result = MilliMeter.toMile();
+					break;
+				case "MilliMeter":
+					result = MilliMeter.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = MilliMeter.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = MilliMeter.toNauticalMiles();
+					break;
+				case "PICA":
+					result = MilliMeter.toPICA();
+					break;
+				case "Rods":
+					result = MilliMeter.toRods();
+					break;
+				case "Span":
+					result = MilliMeter.toSpan();
+					break;
+				case "Yard":
+					result = MilliMeter.toYard();
+					break;
+}
+			break;
+		case "NanoMeter":
+			NanoMeter NanoMeter = new NanoMeter(value);
+switch (to) {
+				case "Angstrom":
+					result = NanoMeter.toAngstrom();
+					break;
+				case "Centimeter":
+					result = NanoMeter.toCentimeter();
+					break;
+				case "Chain":
+					result = NanoMeter.toChain();
+					break;
+				case "Fathom":
+					result = NanoMeter.toFathom();
+					break;
+				case "Feet":
+					result = NanoMeter.toFeet();
+					break;
+				case "Hand":
+					result = NanoMeter.toHand();
+					break;
+				case "Inch":
+					result = NanoMeter.toInch();
+					break;
+				case "Kilometer":
+					result = NanoMeter.toKilometer();
+					break;
+				case "Link":
+					result = NanoMeter.toLink();
+					break;
+				case "Meter":
+					result = NanoMeter.toMeter();
+					break;
+				case "Micron":
+					result = NanoMeter.toMicron();
+					break;
+				case "Mile":
+					result = NanoMeter.toMile();
+					break;
+				case "MilliMeter":
+					result = NanoMeter.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = NanoMeter.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = NanoMeter.toNauticalMiles();
+					break;
+				case "PICA":
+					result = NanoMeter.toPICA();
+					break;
+				case "Rods":
+					result = NanoMeter.toRods();
+					break;
+				case "Span":
+					result = NanoMeter.toSpan();
+					break;
+				case "Yard":
+					result = NanoMeter.toYard();
+					break;
+}
+			break;
+		case "NauticalMiles":
+			NauticalMiles NauticalMiles = new NauticalMiles(value);
+switch (to) {
+				case "Angstrom":
+					result = NauticalMiles.toAngstrom();
+					break;
+				case "Centimeter":
+					result = NauticalMiles.toCentimeter();
+					break;
+				case "Chain":
+					result = NauticalMiles.toChain();
+					break;
+				case "Fathom":
+					result = NauticalMiles.toFathom();
+					break;
+				case "Feet":
+					result = NauticalMiles.toFeet();
+					break;
+				case "Hand":
+					result = NauticalMiles.toHand();
+					break;
+				case "Inch":
+					result = NauticalMiles.toInch();
+					break;
+				case "Kilometer":
+					result = NauticalMiles.toKilometer();
+					break;
+				case "Link":
+					result = NauticalMiles.toLink();
+					break;
+				case "Meter":
+					result = NauticalMiles.toMeter();
+					break;
+				case "Micron":
+					result = NauticalMiles.toMicron();
+					break;
+				case "Mile":
+					result = NauticalMiles.toMile();
+					break;
+				case "MilliMeter":
+					result = NauticalMiles.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = NauticalMiles.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = NauticalMiles.toNauticalMiles();
+					break;
+				case "PICA":
+					result = NauticalMiles.toPICA();
+					break;
+				case "Rods":
+					result = NauticalMiles.toRods();
+					break;
+				case "Span":
+					result = NauticalMiles.toSpan();
+					break;
+				case "Yard":
+					result = NauticalMiles.toYard();
+					break;
+}
+			break;
+		case "PICA":
+			PICA PICA = new PICA(value);
+switch (to) {
+				case "Angstrom":
+					result = PICA.toAngstrom();
+					break;
+				case "Centimeter":
+					result = PICA.toCentimeter();
+					break;
+				case "Chain":
+					result = PICA.toChain();
+					break;
+				case "Fathom":
+					result = PICA.toFathom();
+					break;
+				case "Feet":
+					result = PICA.toFeet();
+					break;
+				case "Hand":
+					result = PICA.toHand();
+					break;
+				case "Inch":
+					result = PICA.toInch();
+					break;
+				case "Kilometer":
+					result = PICA.toKilometer();
+					break;
+				case "Link":
+					result = PICA.toLink();
+					break;
+				case "Meter":
+					result = PICA.toMeter();
+					break;
+				case "Micron":
+					result = PICA.toMicron();
+					break;
+				case "Mile":
+					result = PICA.toMile();
+					break;
+				case "MilliMeter":
+					result = PICA.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = PICA.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = PICA.toNauticalMiles();
+					break;
+				case "PICA":
+					result = PICA.toPICA();
+					break;
+				case "Rods":
+					result = PICA.toRods();
+					break;
+				case "Span":
+					result = PICA.toSpan();
+					break;
+				case "Yard":
+					result = PICA.toYard();
+					break;
+}
+			break;
+		case "Rods":
+			Rods Rods = new Rods(value);
+switch (to) {
+				case "Angstrom":
+					result = Rods.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Rods.toCentimeter();
+					break;
+				case "Chain":
+					result = Rods.toChain();
+					break;
+				case "Fathom":
+					result = Rods.toFathom();
+					break;
+				case "Feet":
+					result = Rods.toFeet();
+					break;
+				case "Hand":
+					result = Rods.toHand();
+					break;
+				case "Inch":
+					result = Rods.toInch();
+					break;
+				case "Kilometer":
+					result = Rods.toKilometer();
+					break;
+				case "Link":
+					result = Rods.toLink();
+					break;
+				case "Meter":
+					result = Rods.toMeter();
+					break;
+				case "Micron":
+					result = Rods.toMicron();
+					break;
+				case "Mile":
+					result = Rods.toMile();
+					break;
+				case "MilliMeter":
+					result = Rods.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Rods.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Rods.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Rods.toPICA();
+					break;
+				case "Rods":
+					result = Rods.toRods();
+					break;
+				case "Span":
+					result = Rods.toSpan();
+					break;
+				case "Yard":
+					result = Rods.toYard();
+					break;
+}
+			break;
+		case "Span":
+			Span Span = new Span(value);
+switch (to) {
+				case "Angstrom":
+					result = Span.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Span.toCentimeter();
+					break;
+				case "Chain":
+					result = Span.toChain();
+					break;
+				case "Fathom":
+					result = Span.toFathom();
+					break;
+				case "Feet":
+					result = Span.toFeet();
+					break;
+				case "Hand":
+					result = Span.toHand();
+					break;
+				case "Inch":
+					result = Span.toInch();
+					break;
+				case "Kilometer":
+					result = Span.toKilometer();
+					break;
+				case "Link":
+					result = Span.toLink();
+					break;
+				case "Meter":
+					result = Span.toMeter();
+					break;
+				case "Micron":
+					result = Span.toMicron();
+					break;
+				case "Mile":
+					result = Span.toMile();
+					break;
+				case "MilliMeter":
+					result = Span.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Span.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Span.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Span.toPICA();
+					break;
+				case "Rods":
+					result = Span.toRods();
+					break;
+				case "Span":
+					result = Span.toSpan();
+					break;
+				case "Yard":
+					result = Span.toYard();
+					break;
+}
+			break;
+		case "Yard":
+			Yard Yard = new Yard(value);
+switch (to) {
+				case "Angstrom":
+					result = Yard.toAngstrom();
+					break;
+				case "Centimeter":
+					result = Yard.toCentimeter();
+					break;
+				case "Chain":
+					result = Yard.toChain();
+					break;
+				case "Fathom":
+					result = Yard.toFathom();
+					break;
+				case "Feet":
+					result = Yard.toFeet();
+					break;
+				case "Hand":
+					result = Yard.toHand();
+					break;
+				case "Inch":
+					result = Yard.toInch();
+					break;
+				case "Kilometer":
+					result = Yard.toKilometer();
+					break;
+				case "Link":
+					result = Yard.toLink();
+					break;
+				case "Meter":
+					result = Yard.toMeter();
+					break;
+				case "Micron":
+					result = Yard.toMicron();
+					break;
+				case "Mile":
+					result = Yard.toMile();
+					break;
+				case "MilliMeter":
+					result = Yard.toMilliMeter();
+					break;
+				case "NanoMeter":
+					result = Yard.toNanoMeter();
+					break;
+				case "NauticalMiles":
+					result = Yard.toNauticalMiles();
+					break;
+				case "PICA":
+					result = Yard.toPICA();
+					break;
+				case "Rods":
+					result = Yard.toRods();
+					break;
+				case "Span":
+					result = Yard.toSpan();
+					break;
+				case "Yard":
+					result = Yard.toYard();
+					break;
+}
+			break;
+	}
+break;
+case "Area":
+	switch (from) {
+		case "Acres":
+			Acres Acres = new Acres(value);
+switch (to) {
+				case "Acres":
+					result = Acres.toAcres();
+					break;
+				case "Hectares":
+					result = Acres.toHectares();
+					break;
+				case "SquareCentimeter":
+					result = Acres.toSquareCentimeter();
+					break;
+				case "SquareFeet":
+					result = Acres.toSquareFeet();
+					break;
+				case "SquareInch":
+					result = Acres.toSquareInch();
+					break;
+				case "SquareKilometer":
+					result = Acres.toSquareKilometer();
+					break;
+				case "SquareMeter":
+					result = Acres.toSquareMeter();
+					break;
+				case "SquareMile":
+					result = Acres.toSquareMile();
+					break;
+				case "SquareMillimeter":
+					result = Acres.toSquareMillimeter();
+					break;
+				case "SquareYard":
+					result = Acres.toSquareYard();
+					break;
+}
+			break;
+		case "Hectares":
+			Hectares Hectares = new Hectares(value);
+switch (to) {
+				case "Acres":
+					result = Hectares.toAcres();
+					break;
+				case "Hectares":
+					result = Hectares.toHectares();
+					break;
+				case "SquareCentimeter":
+					result = Hectares.toSquareCentimeter();
+					break;
+				case "SquareFeet":
+					result = Hectares.toSquareFeet();
+					break;
+				case "SquareInch":
+					result = Hectares.toSquareInch();
+					break;
+				case "SquareKilometer":
+					result = Hectares.toSquareKilometer();
+					break;
+				case "SquareMeter":
+					result = Hectares.toSquareMeter();
+					break;
+				case "SquareMile":
+					result = Hectares.toSquareMile();
+					break;
+				case "SquareMillimeter":
+					result = Hectares.toSquareMillimeter();
+					break;
+				case "SquareYard":
+					result = Hectares.toSquareYard();
+					break;
+}
+			break;
+		case "SquareCentimeter":
+			SquareCentimeter SquareCentimeter = new SquareCentimeter(value);
+switch (to) {
+				case "Acres":
+					result = SquareCentimeter.toAcres();
+					break;
+				case "Hectares":
+					result = SquareCentimeter.toHectares();
+					break;
+				case "SquareCentimeter":
+					result = SquareCentimeter.toSquareCentimeter();
+					break;
+				case "SquareFeet":
+					result = SquareCentimeter.toSquareFeet();
+					break;
+				case "SquareInch":
+					result = SquareCentimeter.toSquareInch();
+					break;
+				case "SquareKilometer":
+					result = SquareCentimeter.toSquareKilometer();
+					break;
+				case "SquareMeter":
+					result = SquareCentimeter.toSquareMeter();
+					break;
+				case "SquareMile":
+					result = SquareCentimeter.toSquareMile();
+					break;
+				case "SquareMillimeter":
+					result = SquareCentimeter.toSquareMillimeter();
+					break;
+				case "SquareYard":
+					result = SquareCentimeter.toSquareYard();
+					break;
+}
+			break;
+		case "SquareFeet":
+			SquareFeet SquareFeet = new SquareFeet(value);
+switch (to) {
+				case "Acres":
+					result = SquareFeet.toAcres();
+					break;
+				case "Hectares":
+					result = SquareFeet.toHectares();
+					break;
+				case "SquareCentimeter":
+					result = SquareFeet.toSquareCentimeter();
+					break;
+				case "SquareFeet":
+					result = SquareFeet.toSquareFeet();
+					break;
+				case "SquareInch":
+					result = SquareFeet.toSquareInch();
+					break;
+				case "SquareKilometer":
+					result = SquareFeet.toSquareKilometer();
+					break;
+				case "SquareMeter":
+					result = SquareFeet.toSquareMeter();
+					break;
+				case "SquareMile":
+					result = SquareFeet.toSquareMile();
+					break;
+				case "SquareMillimeter":
+					result = SquareFeet.toSquareMillimeter();
+					break;
+				case "SquareYard":
+					result = SquareFeet.toSquareYard();
+					break;
+}
+			break;
+		case "SquareInch":
+			SquareInch SquareInch = new SquareInch(value);
+switch (to) {
+				case "Acres":
+					result = SquareInch.toAcres();
+					break;
+				case "Hectares":
+					result = SquareInch.toHectares();
+					break;
+				case "SquareCentimeter":
+					result = SquareInch.toSquareCentimeter();
+					break;
+				case "SquareFeet":
+					result = SquareInch.toSquareFeet();
+					break;
+				case "SquareInch":
+					result = SquareInch.toSquareInch();
+					break;
+				case "SquareKilometer":
+					result = SquareInch.toSquareKilometer();
+					break;
+				case "SquareMeter":
+					result = SquareInch.toSquareMeter();
+					break;
+				case "SquareMile":
+					result = SquareInch.toSquareMile();
+					break;
+				case "SquareMillimeter":
+					result = SquareInch.toSquareMillimeter();
+					break;
+				case "SquareYard":
+					result = SquareInch.toSquareYard();
+					break;
+}
+			break;
+		case "SquareKilometer":
+			SquareKilometer SquareKilometer = new SquareKilometer(value);
+switch (to) {
+				case "Acres":
+					result = SquareKilometer.toAcres();
+					break;
+				case "Hectares":
+					result = SquareKilometer.toHectares();
+					break;
+				case "SquareCentimeter":
+					result = SquareKilometer.toSquareCentimeter();
+					break;
+				case "SquareFeet":
+					result = SquareKilometer.toSquareFeet();
+					break;
+				case "SquareInch":
+					result = SquareKilometer.toSquareInch();
+					break;
+				case "SquareKilometer":
+					result = SquareKilometer.toSquareKilometer();
+					break;
+				case "SquareMeter":
+					result = SquareKilometer.toSquareMeter();
+					break;
+				case "SquareMile":
+					result = SquareKilometer.toSquareMile();
+					break;
+				case "SquareMillimeter":
+					result = SquareKilometer.toSquareMillimeter();
+					break;
+				case "SquareYard":
+					result = SquareKilometer.toSquareYard();
+					break;
+}
+			break;
+		case "SquareMeter":
+			SquareMeter SquareMeter = new SquareMeter(value);
+switch (to) {
+				case "Acres":
+					result = SquareMeter.toAcres();
+					break;
+				case "Hectares":
+					result = SquareMeter.toHectares();
+					break;
+				case "SquareCentimeter":
+					result = SquareMeter.toSquareCentimeter();
+					break;
+				case "SquareFeet":
+					result = SquareMeter.toSquareFeet();
+					break;
+				case "SquareInch":
+					result = SquareMeter.toSquareInch();
+					break;
+				case "SquareKilometer":
+					result = SquareMeter.toSquareKilometer();
+					break;
+				case "SquareMeter":
+					result = SquareMeter.toSquareMeter();
+					break;
+				case "SquareMile":
+					result = SquareMeter.toSquareMile();
+					break;
+				case "SquareMillimeter":
+					result = SquareMeter.toSquareMillimeter();
+					break;
+				case "SquareYard":
+					result = SquareMeter.toSquareYard();
+					break;
+}
+			break;
+		case "SquareMile":
+			SquareMile SquareMile = new SquareMile(value);
+switch (to) {
+				case "Acres":
+					result = SquareMile.toAcres();
+					break;
+				case "Hectares":
+					result = SquareMile.toHectares();
+					break;
+				case "SquareCentimeter":
+					result = SquareMile.toSquareCentimeter();
+					break;
+				case "SquareFeet":
+					result = SquareMile.toSquareFeet();
+					break;
+				case "SquareInch":
+					result = SquareMile.toSquareInch();
+					break;
+				case "SquareKilometer":
+					result = SquareMile.toSquareKilometer();
+					break;
+				case "SquareMeter":
+					result = SquareMile.toSquareMeter();
+					break;
+				case "SquareMile":
+					result = SquareMile.toSquareMile();
+					break;
+				case "SquareMillimeter":
+					result = SquareMile.toSquareMillimeter();
+					break;
+				case "SquareYard":
+					result = SquareMile.toSquareYard();
+					break;
+}
+			break;
+		case "SquareMillimeter":
+			SquareMillimeter SquareMillimeter = new SquareMillimeter(value);
+switch (to) {
+				case "Acres":
+					result = SquareMillimeter.toAcres();
+					break;
+				case "Hectares":
+					result = SquareMillimeter.toHectares();
+					break;
+				case "SquareCentimeter":
+					result = SquareMillimeter.toSquareCentimeter();
+					break;
+				case "SquareFeet":
+					result = SquareMillimeter.toSquareFeet();
+					break;
+				case "SquareInch":
+					result = SquareMillimeter.toSquareInch();
+					break;
+				case "SquareKilometer":
+					result = SquareMillimeter.toSquareKilometer();
+					break;
+				case "SquareMeter":
+					result = SquareMillimeter.toSquareMeter();
+					break;
+				case "SquareMile":
+					result = SquareMillimeter.toSquareMile();
+					break;
+				case "SquareMillimeter":
+					result = SquareMillimeter.toSquareMillimeter();
+					break;
+				case "SquareYard":
+					result = SquareMillimeter.toSquareYard();
+					break;
+}
+			break;
+		case "SquareYard":
+			SquareYard SquareYard = new SquareYard(value);
+switch (to) {
+				case "Acres":
+					result = SquareYard.toAcres();
+					break;
+				case "Hectares":
+					result = SquareYard.toHectares();
+					break;
+				case "SquareCentimeter":
+					result = SquareYard.toSquareCentimeter();
+					break;
+				case "SquareFeet":
+					result = SquareYard.toSquareFeet();
+					break;
+				case "SquareInch":
+					result = SquareYard.toSquareInch();
+					break;
+				case "SquareKilometer":
+					result = SquareYard.toSquareKilometer();
+					break;
+				case "SquareMeter":
+					result = SquareYard.toSquareMeter();
+					break;
+				case "SquareMile":
+					result = SquareYard.toSquareMile();
+					break;
+				case "SquareMillimeter":
+					result = SquareYard.toSquareMillimeter();
+					break;
+				case "SquareYard":
+					result = SquareYard.toSquareYard();
+					break;
+}
+			break;
+	}
+break;
+case "Temperature":
+	switch (from) {
+		case "DegreesCelsius":
+			DegreesCelsius DegreesCelsius = new DegreesCelsius(value);
+switch (to) {
+				case "DegreesCelsius":
+					result = DegreesCelsius.toDegreesCelsius();
+					break;
+				case "DegreesFahrenheit":
+					result = DegreesCelsius.toDegreesFahrenheit();
+					break;
+				case "Kelvin":
+					result = DegreesCelsius.toKelvin();
+					break;
+}
+			break;
+		case "DegreesFahrenheit":
+			DegreesFahrenheit DegreesFahrenheit = new DegreesFahrenheit(value);
+switch (to) {
+				case "DegreesCelsius":
+					result = DegreesFahrenheit.toDegreesCelsius();
+					break;
+				case "DegreesFahrenheit":
+					result = DegreesFahrenheit.toDegreesFahrenheit();
+					break;
+				case "Kelvin":
+					result = DegreesFahrenheit.toKelvin();
+					break;
+}
+			break;
+		case "Kelvin":
+			Kelvin Kelvin = new Kelvin(value);
+switch (to) {
+				case "DegreesCelsius":
+					result = Kelvin.toDegreesCelsius();
+					break;
+				case "DegreesFahrenheit":
+					result = Kelvin.toDegreesFahrenheit();
+					break;
+				case "Kelvin":
+					result = Kelvin.toKelvin();
+					break;
+}
+			break;
+	}
+break;
+case "Velocity":
+	switch (from) {
+		case "Centimeterpersecond":
+			Centimeterpersecond Centimeterpersecond = new Centimeterpersecond(value);
+switch (to) {
+				case "Centimeterpersecond":
+					result = Centimeterpersecond.toCentimeterpersecond();
+					break;
+				case "Feetpersecond":
+					result = Centimeterpersecond.toFeetpersecond();
+					break;
+				case "Kilometerpersecond":
+					result = Centimeterpersecond.toKilometerpersecond();
+					break;
+				case "Knots":
+					result = Centimeterpersecond.toKnots();
+					break;
+				case "Meterpersecond":
+					result = Centimeterpersecond.toMeterpersecond();
+					break;
+				case "Milepersecond":
+					result = Centimeterpersecond.toMilepersecond();
+					break;
+}
+			break;
+		case "Feetpersecond":
+			Feetpersecond Feetpersecond = new Feetpersecond(value);
+switch (to) {
+				case "Centimeterpersecond":
+					result = Feetpersecond.toCentimeterpersecond();
+					break;
+				case "Feetpersecond":
+					result = Feetpersecond.toFeetpersecond();
+					break;
+				case "Kilometerpersecond":
+					result = Feetpersecond.toKilometerpersecond();
+					break;
+				case "Knots":
+					result = Feetpersecond.toKnots();
+					break;
+				case "Meterpersecond":
+					result = Feetpersecond.toMeterpersecond();
+					break;
+				case "Milepersecond":
+					result = Feetpersecond.toMilepersecond();
+					break;
+}
+			break;
+		case "Kilometerpersecond":
+			Kilometerpersecond Kilometerpersecond = new Kilometerpersecond(value);
+switch (to) {
+				case "Centimeterpersecond":
+					result = Kilometerpersecond.toCentimeterpersecond();
+					break;
+				case "Feetpersecond":
+					result = Kilometerpersecond.toFeetpersecond();
+					break;
+				case "Kilometerpersecond":
+					result = Kilometerpersecond.toKilometerpersecond();
+					break;
+				case "Knots":
+					result = Kilometerpersecond.toKnots();
+					break;
+				case "Meterpersecond":
+					result = Kilometerpersecond.toMeterpersecond();
+					break;
+				case "Milepersecond":
+					result = Kilometerpersecond.toMilepersecond();
+					break;
+}
+			break;
+		case "Knots":
+			Knots Knots = new Knots(value);
+switch (to) {
+				case "Centimeterpersecond":
+					result = Knots.toCentimeterpersecond();
+					break;
+				case "Feetpersecond":
+					result = Knots.toFeetpersecond();
+					break;
+				case "Kilometerpersecond":
+					result = Knots.toKilometerpersecond();
+					break;
+				case "Knots":
+					result = Knots.toKnots();
+					break;
+				case "Meterpersecond":
+					result = Knots.toMeterpersecond();
+					break;
+				case "Milepersecond":
+					result = Knots.toMilepersecond();
+					break;
+}
+			break;
+		case "Meterpersecond":
+			Meterpersecond Meterpersecond = new Meterpersecond(value);
+switch (to) {
+				case "Centimeterpersecond":
+					result = Meterpersecond.toCentimeterpersecond();
+					break;
+				case "Feetpersecond":
+					result = Meterpersecond.toFeetpersecond();
+					break;
+				case "Kilometerpersecond":
+					result = Meterpersecond.toKilometerpersecond();
+					break;
+				case "Knots":
+					result = Meterpersecond.toKnots();
+					break;
+				case "Meterpersecond":
+					result = Meterpersecond.toMeterpersecond();
+					break;
+				case "Milepersecond":
+					result = Meterpersecond.toMilepersecond();
+					break;
+}
+			break;
+		case "Milepersecond":
+			Milepersecond Milepersecond = new Milepersecond(value);
+switch (to) {
+				case "Centimeterpersecond":
+					result = Milepersecond.toCentimeterpersecond();
+					break;
+				case "Feetpersecond":
+					result = Milepersecond.toFeetpersecond();
+					break;
+				case "Kilometerpersecond":
+					result = Milepersecond.toKilometerpersecond();
+					break;
+				case "Knots":
+					result = Milepersecond.toKnots();
+					break;
+				case "Meterpersecond":
+					result = Milepersecond.toMeterpersecond();
+					break;
+				case "Milepersecond":
+					result = Milepersecond.toMilepersecond();
+					break;
+}
+			break;
+	}
+break;
+case "Pressure":
+	switch (from) {
+		case "Atmosphere":
+			Atmosphere Atmosphere = new Atmosphere(value);
+switch (to) {
+				case "Atmosphere":
+					result = Atmosphere.toAtmosphere();
+					break;
+				case "Bar":
+					result = Atmosphere.toBar();
+					break;
+				case "KiloPascal":
+					result = Atmosphere.toKiloPascal();
+					break;
+				case "Millimeterofmercury":
+					result = Atmosphere.toMillimeterofmercury();
+					break;
+				case "Pascal":
+					result = Atmosphere.toPascal();
+					break;
+				case "PoundperSquareInchPSI":
+					result = Atmosphere.toPoundperSquareInchPSI();
+					break;
+}
+			break;
+		case "Bar":
+			Bar Bar = new Bar(value);
+switch (to) {
+				case "Atmosphere":
+					result = Bar.toAtmosphere();
+					break;
+				case "Bar":
+					result = Bar.toBar();
+					break;
+				case "KiloPascal":
+					result = Bar.toKiloPascal();
+					break;
+				case "Millimeterofmercury":
+					result = Bar.toMillimeterofmercury();
+					break;
+				case "Pascal":
+					result = Bar.toPascal();
+					break;
+				case "PoundperSquareInchPSI":
+					result = Bar.toPoundperSquareInchPSI();
+					break;
+}
+			break;
+		case "KiloPascal":
+			KiloPascal KiloPascal = new KiloPascal(value);
+switch (to) {
+				case "Atmosphere":
+					result = KiloPascal.toAtmosphere();
+					break;
+				case "Bar":
+					result = KiloPascal.toBar();
+					break;
+				case "KiloPascal":
+					result = KiloPascal.toKiloPascal();
+					break;
+				case "Millimeterofmercury":
+					result = KiloPascal.toMillimeterofmercury();
+					break;
+				case "Pascal":
+					result = KiloPascal.toPascal();
+					break;
+				case "PoundperSquareInchPSI":
+					result = KiloPascal.toPoundperSquareInchPSI();
+					break;
+}
+			break;
+		case "Millimeterofmercury":
+			Millimeterofmercury Millimeterofmercury = new Millimeterofmercury(value);
+switch (to) {
+				case "Atmosphere":
+					result = Millimeterofmercury.toAtmosphere();
+					break;
+				case "Bar":
+					result = Millimeterofmercury.toBar();
+					break;
+				case "KiloPascal":
+					result = Millimeterofmercury.toKiloPascal();
+					break;
+				case "Millimeterofmercury":
+					result = Millimeterofmercury.toMillimeterofmercury();
+					break;
+				case "Pascal":
+					result = Millimeterofmercury.toPascal();
+					break;
+				case "PoundperSquareInchPSI":
+					result = Millimeterofmercury.toPoundperSquareInchPSI();
+					break;
+}
+			break;
+		case "Pascal":
+			Pascal Pascal = new Pascal(value);
+switch (to) {
+				case "Atmosphere":
+					result = Pascal.toAtmosphere();
+					break;
+				case "Bar":
+					result = Pascal.toBar();
+					break;
+				case "KiloPascal":
+					result = Pascal.toKiloPascal();
+					break;
+				case "Millimeterofmercury":
+					result = Pascal.toMillimeterofmercury();
+					break;
+				case "Pascal":
+					result = Pascal.toPascal();
+					break;
+				case "PoundperSquareInchPSI":
+					result = Pascal.toPoundperSquareInchPSI();
+					break;
+}
+			break;
+		case "PoundperSquareInchPSI":
+			PoundperSquareInchPSI PoundperSquareInchPSI = new PoundperSquareInchPSI(value);
+switch (to) {
+				case "Atmosphere":
+					result = PoundperSquareInchPSI.toAtmosphere();
+					break;
+				case "Bar":
+					result = PoundperSquareInchPSI.toBar();
+					break;
+				case "KiloPascal":
+					result = PoundperSquareInchPSI.toKiloPascal();
+					break;
+				case "Millimeterofmercury":
+					result = PoundperSquareInchPSI.toMillimeterofmercury();
+					break;
+				case "Pascal":
+					result = PoundperSquareInchPSI.toPascal();
+					break;
+				case "PoundperSquareInchPSI":
+					result = PoundperSquareInchPSI.toPoundperSquareInchPSI();
+					break;
+}
+			break;
+	}
+break;

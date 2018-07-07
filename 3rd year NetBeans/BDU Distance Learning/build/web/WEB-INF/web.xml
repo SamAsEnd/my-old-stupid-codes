@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Reg</servlet-name>
+        <jsp-file>/WEB-INF/register.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>view</servlet-name>
+        <jsp-file>/WEB-INF/view.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <jsp-file>/WEB-INF/delete.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Reg</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>view</servlet-name>
+        <url-pattern>/view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.html</location>
+    </error-page>
+</web-app>

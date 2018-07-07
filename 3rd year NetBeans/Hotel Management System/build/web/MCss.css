@@ -1,0 +1,207 @@
+#container{
+	width: 95%;
+		
+ }
+ body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FOFOFO;
+	background: #006666 top repeat-x;
+}
+  a:hover
+{
+background-color:yellow;
+} 
+ #navmenu{
+	margin: 0;
+	padding:0;
+	display: inline;
+
+ }
+ #navmenu  ul{
+	margin: 0;
+	 
+	padding: 0px;
+	line-height: 30px;
+
+ }
+ #navmenu  li{
+	margin: 0;
+	
+	padding: 0;
+	list-style: none;
+	float: left;
+	position: relative;
+	background-color: #FOFOFO;
+        border-radius: 15px;
+	
+ 
+ }
+  #navmenu  ul li a {
+	text-align: center;
+	font-family: "comic Sans MS",cursive;
+	text-decoration: none;
+	height: 30px;
+	width: 150px;
+	display: block;
+	color: #fff;
+	border: 2px solid;
+	border-radius: 15px;
+	text-shadow: 2px 1px #000;
+	
+	
+ 
+ }
+  #navmenu  ul ul {
+	 position: absolute;
+	 visibility: hidden;
+	 top: 32px;
+	  
+	
+	 
+ 
+ }
+  #navmenu   ul   li:hover ul{
+	visibility: visible; 
+	 
+ 
+ }
+ 
+ #navmenu     li:hover {
+	background:#FOFOFO;
+	 
+ 
+ }
+ 
+ #navmenu   ul   li:hover ul  ul   li:hover ul{
+	 background: #ccc;
+	 color: #000;
+	 
+	 
+ 
+ }
+  #navmenu   ul   li:hover ul  ul   li:hover ul{
+	 background: #ccc;
+	 color: #000;
+	 
+	 
+ 
+ }
+ 
+  #navmenu   a:hover ul {
+	 color: #000;
+	 
+	 
+ 
+ }
+
+ #header{
+	width: 100%;
+	padding: 20px;
+        position: relative;
+	background-image: url(templatemo_banner_bg.jpg);
+	border-radius: 30px;
+        
+        
+	}
+ 
+ #leftnav{
+	float: left;
+	width: 25%;
+	height: 140%;
+	background-color: #ccc;
+	border-right: 1px dash #694717;
+	border-radius: 30px;
+	 
+
+ }
+ 
+ #rightnav{
+	float: right;
+	width: 24.3%;
+	height: 571px;
+	background-color: #ccc;
+	border-right: 1px dash #694717;
+	border-radius: null;
+ }
+ 
+ #body{
+ border-radius: 30px;
+ background-image: url(bg_bottom.jpg);
+ 
+ }
+ 
+ #footer{
+	clear: both;
+	height:10%;
+	background-color: #ccc;
+	border-radius: null;
+        
+  
+ }
+ #footer_p{
+	padding: 0px;
+	text-align: center;
+ 
+ 
+ }
+ 
+ 
+ 
+ #header  a  {
+	color: #660000;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: verdana;
+	font-size: 20px;
+ }
+
+
+ #horizontalnav {
+	width: 95%;
+	height: 32px;
+	position: absolute;
+	
+	border-radius: 30px;
+	
+ }
+ 
+  
+
+.horizontallink {
+	 
+ }
+  
+ 
+ .box {
+	margin-top: 20px;
+	padding: 15px 15px 15px 15px;
+	background-color: #dddddd;
+	border: 10% solid;
+	width: 50%;
+	color: #000000;
+	border: 2px solid;
+	padding: 20px 5px 20px 5px;
+	border-radius: 15px;
+	}
+	
+#body .box{
+
+
+}
+#leftbox {
+	width: 90%;
+	background: url(bg_col_top.jpg) no-repeat top left;
+	height: 90%;
+	border-top: 30px solid;
+	padding: 20px 5px 20px 5px;
+	margin: 50px 0px 0px 0px;
+	border-radius: 30px;
+	 
+
+ }
+ 
+

@@ -1,0 +1,84 @@
+body {
+    background: url(../img/bg.png) repeat;
+}
+
+#content {
+    width: 500px;
+    height: auto;
+    background-image: linear-gradient(bottom, #3C3C3C 16%, #5A5A5A 58%);
+    background-image: -o-linear-gradient(bottom, #3C3C3C 16%, #5A5A5A 58%);
+    background-image: -moz-linear-gradient(bottom, #3C3C3C 16%, #5A5A5A 58%);
+    background-image: -webkit-linear-gradient(bottom, #3C3C3C 16%, #5A5A5A 58%);
+    background-image: -ms-linear-gradient(bottom, #3C3C3C 16%, #5A5A5A 58%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.16, #3C3C3C),
+        color-stop(0.58, #5A5A5A)
+        );
+
+    margin: 100px auto;
+    box-shadow: #666 6px 6px 10px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+#errorMsg,.loginTxt {
+    font-family: Tahoma;
+    text-shadow: #666 0px 0px 1px;
+    font-weight: bold;
+}
+
+#errorMsg {
+    font-size: 14px;
+    color: #F22;
+
+}
+
+.loginTxt{
+    font-size: 18px;
+    color: #000;
+}
+
+#lock {
+    background-image: url(../img/lock.png);
+    background-repeat: no-repeat;
+}
+
+#lock:hover {
+    background-image: url(../img/lockHover.png);
+}
+
+.btn {
+    margin: 0px;
+    box-shadow: #999 3px 3px 3px;
+    width: 90px;
+    border: 1px solid #FFF;
+    background-color: #BBB;
+    background-image: linear-gradient(bottom, #999 16%, #BBB 58%);
+    background-image: -moz-linear-gradient(bottom, #999 16%, #BBB 58%);
+    background-image: -webkit-linear-gradient(bottom, #999 16%, #BBB 58%);
+    border-radius: 3px;
+    transition: all 0.4s;
+}
+.btn:hover {
+    margin-top: 2px;
+    margin-left: 2px;
+    box-shadow: #999 1px 1px 1px;
+    background-color: #CCC;
+    background-image: linear-gradient(bottom, #AAA 16%, #CCC 58%);
+    background-image: -moz-linear-gradient(bottom, #AAA 16%, #CCC 58%);
+    background-image: -webkit-linear-gradient(bottom, #AAA 16%, #CCC 58%);
+
+}
+.btn:active {
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
+}

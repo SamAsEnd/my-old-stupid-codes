@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>TestMe</servlet-name>
+        <servlet-class>com.samasend.TestMe</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CookieCRUD</servlet-name>
+        <servlet-class>com.samasend.CookieCRUD</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestMe</servlet-name>
+        <url-pattern>/TestMe.do</url-pattern>
+    </servlet-mapping>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.html</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.ArithmeticException</exception-type>
+        <location>/ex.html</location>
+    </error-page>
+    <servlet-mapping>
+        <servlet-name>CookieCRUD</servlet-name>
+        <url-pattern>/CookieCRUD</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

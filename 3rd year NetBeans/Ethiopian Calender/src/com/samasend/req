@@ -1,0 +1,34 @@
+<meta charset="UTF-8" />
+<pre>
+- Enum Era with the offset value
+- Raw input fro ethiopian date
+- Raw input fro geregorial date
+- LocalDate, Date & Calendar
+- isLeapYear based on jdk8 impl
+- JDN based
+- custom DateFormater
+- Day to long et {}
+- Day to short et {}
+- Month to long et {}
+- Month to short et {}
+- Year to Era et
+- Period
+
+ማክሰኞ፣ ጥቅምት 11 ቀን (ሐና፡ማርያም) 10:15:44 ነጋት EAT ፲፱፻፺፯ (ማቴዎስ) ዓ/ም
+ማክሰኞ፣ ጥቅምት 11 ቀን 10:15:44 ነጋት EAT ፲፱፻፺፯ ዓ/ም 
+DAY፣ MONTH (d) ቀን hh:mm:ss a Z (yyyy) G 
+
+boolean
+    - isLeapYear
+    - isZemen(Zemen)
+    - isEra(Era)
+    - isFirstDayOfWeek
+
+EthiopianDate
+    - getFirstDayOfTheMonth
+    - getFirstDayOfTheYear
+    - getFirstDayOfTheWeek
+    
+    
+</pre>
+

@@ -1,0 +1,133 @@
+SUDIK
+LAGERAY
+LEUNAMA
+NHIDEMERBEG
+REZENEBA
+ELAWES
+DEMHA
+WANAGSIM
+YANODA
+LEBURIK
+BELAK
+BAELAK
+YASIS
+LEAHCIM
+UMATBAH
+REGAHSET
+FESOY
+LEBOR
+SINNAHOY
+NEVEF
+EFESOY
+NOSMAS
+demmahoM
+SEDKEM
+EASNIT
+NOSMAS
+wehcakendiY
+KONEH
+tereseM
+eyageZ
+TEIDER
+HSENAGEST
+sayiassE
+urimaT
+UTSGET
+LEUMAS
+tiwarmaS
+NADIKLAK
+NAHERBAGEST
+amukoT
+UKALEM
+lebA
+henateG
+uraheB
+TOWIH
+mehleteB
+SNAHOYERBEG
+TAYAH
+ukiraT
+maleS
+LEUMAS
+TSGIT
+WAFSA
+TIWAMUXA
+ANSOS
+rezenebA
+lakliY
+TILUL
+UHYATNES
+tekereB
+harbY
+TONAMYAH
+ATEMAYIF
+ANNAH
+merhpE
+MELAKRES
+namherudbA
+mayraMedestA
+SORDOWET
+heniduweZ
+arimeS
+akiluZ
+CHEW |     MENGISTU | 12 
+13 |        SISAY |      WONDEMU |       KEBEDE | 12 
+14 |      MICHAEL |        GIRMA |        BECHE | 11 
+15 |      HABTAMU |       WONDEM |      TIRUNEH | 10 
+16 |     TESHAGER |       WOSSEN |       ASSEFA |  9 
+17 |        YOSEF |        JEMAL |        KEDIR |  8 
+18 |        ROBEL |        ABEBE |        ALEMU |  7 
+19 |     YOHANNIS |      TEKESTE |      DEBELLA |  6 
+20 |        FEVEN |     MULUGETA |     SHIMELIS |  5 
+21 |       YOSEFE |       KEFALE |       ZEMENU |  4 
+22 |       SAMSON |       ENDALE |     MIRGESSA |  3 
+23 |     MOHAMMED |         ADEM |       BERISO |  2 
+24 |       MEKDES |        SAHLE |         KORE |  1 
+25 |       TINSAE |       SIMEON |      WONJELO |  1 
+26 |       SAMSON |       BELETE | GEBRESELASIE |  2 
+27 |  YIDNEKACHEW |     NIGUSSIE |       KEBEDE |  3 
+28 |        HENOK |    YESHITILA |        HAILE |  4 
+29 |      MESERET |       NEGASH |     SHIFERAW |  5 
+30 |       ZEGAYE |       HALALA |      HANTATO |  6 
+31 |       REDIET |      GEDEFAW |        MOLLA |  7 
+32 |    TSEGANESH |        AREGA |        ANOSE |  8 
+33 |     ESSAIYAS |        BELAY |       ABITEW |  9 
+34 |       TAMIRU |       ZENEBE |        WOLDE | 10 
+35 |       TEGSTU |       BIYADG |       SEWNET | 11 
+36 |       SAMUEL |      AYALNEH |      ZERIHUN | 12 
+37 |     SAMRAWIT |       GOITOM |       G/HEIR | 12 
+38 |     KALKIDAN |        BELAY |     JEMBERIE | 11 
+39 |  TSEGABREHAN |      ZERIHUN |  HABTEMARIAM | 10 
+40 |       TOKUMA |       OLKEBA |         FURI |  9 
+41 |       MELAKU |        GIRMA |        ALEMU |  8 
+42 |         ABEL |        ADDIS |      DHERESA |  7 
+43 |      GETANEH |       BIAZEN |       AYALEW |  6 
+44 |       BEHARU |       FELEKE |     BANTIRGA |  5 
+45 |        HIWOT |      GEREMEW |       ZERGAW |  4 
+46 |     BETELHEM |        ALEMU |       HASSEN |  3 
+47 |  GEBREYOHANS | GEBRELIBANOS |        GEBRU |  2 
+48 |        HAYAT |       TAKELE |      HUSSIEN |  1 
+49 |       TARIKU |    MINWYELET |         WUBE |  1 
+50 |        SELAM |        SEIFU |       TABOUR |  2 
+51 |       SAMUEL |        GEBRU |    ALEMAYEHU |  3 
+52 |        TIGST |       ADMASU |        AWEKE |  4 
+53 |        ASFAW |      YOHANIS |      GARMAMO |  5 
+54 |     AXUMAWIT |        BERHE |      MENGSTU |  6 
+55 |        SOSNA |       DEMSEW |       TSEHAY |  7 
+56 |     ABENEZER |      TADESSE |       DEGEFU |  8 
+57 |       YILKAL |        ABERE |       DEMLEW |  9 
+58 |        LULIT |        GIRMA | WOLDEGIORGIS | 10 
+59 |     SENTAYHU |      TADEYOS |        FEKRU | 11 
+60 |      BEREKET |       MESELE |         AMDE | 12 
+61 |        YBRAH |        DESTA |       SUYOUM | 12 
+62 |     HAYMANOT |    DAGNACHEW |       HIBSTU | 11 
+63 |     FIYAMETA |      BIRHANU |      TSEGAYE | 10 
+64 |        HANNA |      WONDIMU |      DEMISSE |  9 
+65 |       EPHREM |  HAILEMARIAM |       DEBENA |  8 
+66 |     SERKALEM |        MOGES |        WOLDE |  7 
+67 |   ABDUREHMAN |     MOHAMMED |      LALEMDA |  6 
+68 | ATSEDEMARYAM |        ADANE |       MESELE |  5 
+69 |     TEWODROS |       ADUGNA |        ABERA |  4 
+70 |    ZEWUDINEH |     MEKONNEN |         NULL |  3 
+71 |       SEMIRA |     NURSEDIN |         NULL |  2 
+72 |       ZULIKA |        KEDIR |         NULL |  1 

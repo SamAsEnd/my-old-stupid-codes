@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- thumb up fro HTML5 -->
+<html>
+    <head>
+        <title>Sam As End</title>
+        <meta charset="UTF-8">
+        <script src="js/lib/jquery.min.js"></script>
+        <style>
+            img {
+                height: 50px;
+            }
+        </style>
+        <script>
+            /**
+             *      Zs script is written just 4 fun. 2 c how much i'm attached
+             * 2 jQuery.
+             *
+             *      I dont wanna b like dat guy who thought
+             * <code>document.getElementById()</code> is from jQuery 2.0 beta :)
+             * lol funny ha? more funny if u don't get it. If u don't get it
+             * STOP jQuery and atleast read JS fundamentals!!
+             *
+             *      Z main purpose is to test how i'm independent i am of jQuery
+             * despite how much i <3 it.
+             *
+             *      The task i have in mind is to change some random jQuery code
+             * and do the exact pure JS code to solve the problem.
+             *
+             *      The jQuery code was taken from a video by
+             *      <address>
+             *               Jonathan Sharp
+             *               jQuery Project Team
+             *               Co founder and President of .appendTo
+             *      </address>
+             * at Nov 9, 2010 San Fraincisco, CA on his talk about 'jQuery:
+             * Where it Come From, and How it will continue to Drive Innovation'
+             * :( i dont have the link but try searching it with
+             *  (What's this jQuery- Where it came f . . . ) on YouTube and wait
+             *  for the AJAX auto complete lol
+             *
+             *  The code have 2 parts the pure JS and the jQuery part!
+             *  i tried to use the same comment whenever it is applicable
+             *
+             *  BTW i'm fucken stoned right now and with such complex DOM
+             *  i don't think i will do it. or i might sleep.
+             *
+             * @author Sam As End @ Sat, 07 Jun 2014 02:07:31 GMT
+             * @version 1.0
+             */
+
+            DEBUGJQ = false;
+            DEBUGJS = false;
+
+            // execute the passed function :) (yeah i said it PASSED FUNCTION)
+            // when the the document is ready (obvious ha?)
+            $(document).ready(function() {
+                // select 'li' which r descendent of id 'jQuery' and
+                // bind the function for Double Click event
+                $('#jQuery li').bind('dblclick', function() {
+                    var text = $(this).text(); // get the inner html to variable
+                    if (DEBUGJQ)
+                        alert('text: ' + text);
+                    $(this).empty(); // remove the inner html of the node
+                    // backuping: future access when this become the child
+                    var _this = this;
+                    // create new input node with type text
+                    $('<input type="text" />')
+                            .val(text)      // set the value of the input
+                            // bind the node with key down event
+                            .bind('keydown', function(evt) {
+                                // if event was enter key
+                                if (evt.which == 13) {
+                                    if (DEBUGJQ)
+                                        alert('EVENT: U Pressed Enter');
+                                    // blur away
+                                    $(this).trigger('blur');
+                                }
+                            })
+                            // bind the node with blur
+                            // means the user left the input
+                            .bind('blur', function() {
+                                if (DEBUGJQ)
+                                    alert('EVENT: U Blured Out');
+                                // get the value from the field
+                                var value = $(this).val();
+                                // set the parent 'li' the value
+                                // the field will be removed
+                                $(_this).html(value);
+                            })
+                            // append the input for the double click
+                            .appendTo(this);
+                });
+
+                // For the Debuger
+                $('#jQdebugBtn')
+                        .attr('src', OFF)
+                        .bind('click', function() {
+                            DEBUGJQ = !DEBUGJQ;
+                            if (DEBUGJQ) {
+                                $(this).attr('src', ON);
+                            }
+                            else {
+                                $(this).attr('src', OFF);
+                            }
+                        });
+            });
+            // execute the assigned function
+            // when the the document is ready (obvious ha?)
+
+            window.onload = function() {
+                // select the node with id 'jQuery'
+                var ul = document.getElementById('pureJS');
+                // select 'li' which r descendent of id 'jQuery'
+                var lis = ul.getElementsByTagName('li');
+                // loop through the NodeList
+                for (var i = 0; i < lis.length; i++) {
+                    // get the indexed node(li)
+                    var li = lis[i];
+                    // bind the function for Double Click event
+                    li.ondblclick = function() {
+                        // get the inner html to variable
+                        var text = this.innerHTML;
+                        if (DEBUGJS)
+                            alert('text: ' + text);
+                        // create new input node
+                        var node = document.createElement('input');
+                        // set the type of the node to text
+                        node.setAttribute('type', 'text');
+                        // set the value of the input
+                        node.setAttribute('value', text);
+                        // bind the node with key down event
+                        node.onkeydown = function(evt) {
+                            if (DEBUGJS)
+                                alert('EVENT: U Pressed Enter');
+                            // if event was enter key
+                            if (evt.which == 13) {
+                                // blur away
+                                this.blur();
+                            }
+                        }
+                        // bind the node with blur
+                        // means the user left the input
+                        node.onblur = function() {
+                            if (DEBUGJS)
+                                alert('EVENT: U Blured Out');
+                            // get the value from the field
+                            var value = this.value;
+                            // set the parent 'li' the value
+                            // the field will be removed
+                            this.parentNode.innerHTML = value;
+                        };
+                        // remove the inner html of the node
+                        this.innerHTML = '';
+                        // append the input for the double click
+                        this.appendChild(node);
+                    };
+                }
+
+                var d = document.getElementById('jSdebugBtn');
+                d.src = OFF;
+                d.onclick = function() {
+                    DEBUGJS = !DEBUGJS;
+                    if (DEBUGJS) {
+                        this.src = ON;
+                    }
+                    else {
+                        this.src = OFF;
+                    }
+                };
+            };
+
+            /**
+             * Conclusion
+             *      I wanna write a lot for the conclusion
+             *      but am my phone is ringing
+             *      Buy Buy Mr. Reader
+             *
+             * @author Sam As End @ Sat, 07 Jun 2014 02:48:57 GMT
+             */
+
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>jQuery</legend>
+            <ul id="jQuery">
+                <li>Sam</li>
+                <li>As</li>
+                <li>End</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Pure javaScript</legend>
+            <ul id="pureJS">
+                <li>Sam</li>
+                <li>As</li>
+                <li>End</li>
+            </ul>
+        </fieldset>
+        <hr/>
+        DEBUG By jQuery: <img id="jQdebugBtn" alt='OFF'/> <br>
+        DEBUG By pureJS: <img id="jSdebugBtn" alt='OFF'/> <br>
+        <p><i>On debug the will be an alert boxes telling what happened</i></p>
+        <hr/>
+        <script>
+            OFF = 'data:image/gif;base64,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';
+            ON = 'data:image/gif;base64,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';
+        </script>
+    </body>
+</html>

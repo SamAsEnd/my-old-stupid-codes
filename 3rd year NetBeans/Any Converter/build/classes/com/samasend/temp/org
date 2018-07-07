@@ -1,0 +1,48 @@
+case "Angle":
+                switch (from) {
+                    case "Degree":
+                        Degree degree = new Degree(value);
+                        switch (to) {
+                            case "Degree":
+                                result = degree.toDegree();
+                                break;
+                            case "Gradian":
+                                result = degree.toGradian();
+                                break;
+                            case "Radian":
+                                result = degree.toRadian();
+                                break;
+                        }
+                        break;
+                    case "Gradian":
+                        Gradian gradian = new Gradian(value);
+                        switch (to) {
+                            case "Degree":
+                                result = gradian.toDegree();
+                                break;
+                            case "Gradian":
+                                result = gradian.toGradian();
+                                break;
+                            case "Radian":
+                                result = gradian.toRadian();
+                                break;
+                        }
+                        break;
+                    case "Radian":
+                        Radian radian = new Radian(value);
+                        switch (to) {
+                            case "Degree":
+                                result = radian.toDegree();
+                                break;
+                            case "Gradian":
+                                result = radian.toGradian();
+                                break;
+                            case "Radian":
+                                result = radian.toRadian();
+                                break;
+                        }
+                        break;
+                }
+                break;
+
+        }

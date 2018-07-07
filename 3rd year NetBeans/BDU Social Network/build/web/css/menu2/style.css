@@ -1,0 +1,46 @@
+ul#navCSS,ul#navCSS ul{
+    margin:0;list-style:none;padding:0;background-color:#C0C0C0;background-image:url("mainbk.png");background-repeat:repeat;border-width:0px;border-style:solid;border-color:#999999;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;}
+ul#navCSS ul{
+    display:none;position:absolute;left:100%;top:0;-moz-box-shadow:0.7px 0.7px 1px #777777;-webkit-box-shadow:0.7px 0.7px 1px #777777;box-shadow:0.7px 0.7px 1px #777777;background-color:#FFF;background-image:none;border-width:1px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;border-style:solid;border-color:#d8d9da;padding:0 9px 9px;}
+ul#navCSS li:hover>*{
+    display:block;}
+ul#navCSS li{
+    position:relative;display:block;white-space:nowrap;font-size:0;}
+ul#navCSS li:hover{
+    z-index:1;}
+ul#navCSS{
+    font-size:0;z-index:999;position:relative;display:block;float:left;padding:0 1px 1px;}
+ul#navCSS>li{
+    margin:1px 0 0;}
+ul#navCSS a:active, ul#navCSS a:focus{
+    outline-style:none;}
+ul#navCSS a{
+    display:block;vertical-align:middle;text-align:center;text-decoration:none;font:bold 12px Arial;color:#262626;cursor:default;padding:10px;background-color:#C0C0C0;background-image:url("mainbk.png");background-repeat:repeat;background-position:0 200px;border-width:0px;border-style:none;/*border-color:;*/}
+ul#navCSS ul li{
+    float:none;margin:9px 0 0;}
+ul#navCSS ul a{
+    text-align:left;padding:8px 0 0 0;background-color:#FFF;background-image:none;border-width:1px 0 0 0;border-style:solid;border-color:#D9D9D9;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;font:13px Arial;color:#333333;text-decoration:none;}
+ul#navCSS li:hover>a,ul#navCSS li a.pressed{
+    background-color:#C0C0C0;border-style:none;color:#efefef;background-image:url("mainbk.png");background-position:0 100px;text-decoration:none;}
+ul#navCSS span{
+    display:block;overflow:visible;background-position:right center;background-repeat:no-repeat;padding-right:0px;}
+ul#navCSS ul li:hover>a,ul#navCSS ul li a.pressed{
+    background-color:#FFF;background-image:none;border-style:solid;border-color:#D9D9D9;color:#0088CC;text-decoration:none;}
+ul#navCSS li.topfirst>a{
+    border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;-webkit-border-radius:4px;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:0;text-shadow:#d8d8d8 0px 1px 1px;}
+ul#navCSS li.topfirst:hover>a,ul#navCSS li.topfirst a.pressed{
+    text-shadow:#3d3d3d 0px -1px 1px;}
+ul#navCSS li.topmenu>a{
+    text-shadow:#d8d8d8 0px 1px 1px;}
+ul#navCSS li.topmenu:hover>a,ul#navCSS li.topmenu a.pressed{
+    text-shadow:#3d3d3d 0px -1px 1px;}
+ul#navCSS li.toplast>a{
+    border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;-webkit-border-radius:0;-webkit-border-bottom-right-radius:4px;-webkit-border-bottom-left-radius:4px;text-shadow:#d8d8d8 0px 1px 1px;}
+ul#navCSS li.toplast:hover>a,ul#navCSS li.toplast a.pressed{
+    text-shadow:#3d3d3d 0px -1px 1px;}
+ul#navCSS _>li>a{
+    padding:0;}
+ul#navCSS li.subfirst>a{
+    border-width:0;border-style:none;padding:0;}
+ul#navCSS li.subfirst:hover>a,ul#navCSS li.subfirst a.pressed{
+    border-style:none;}

@@ -1,0 +1,107 @@
+Angle
+	Degree
+	Gradian
+	Radian
+Area
+	Acres
+	Hectares
+	Square Centimeter
+	Square Feet
+	Square Inch
+	Square Kilometer
+	Square Meter
+	Square Mile
+	Square Millimeter
+	Square Yard
+Energy
+	British Thermal Unit
+	Calorie
+	Electron - Volts
+	Foot - Pound
+	Joule
+	Kilocalorie
+	Kilojoule
+Length
+	Angstrom
+	Centimeter
+	Chain
+	Fathom
+	Feet
+	Hand
+	Inch
+	Kilometer
+	Link
+	Meter
+	Micron
+	Mile
+	MilliMeter
+	NanoMeter
+	Nautical Miles
+	PICA
+	Rods
+	Span
+	Yard
+Power
+	BTU/minute
+	Foot - Pound/minute
+	Horsepower
+	Kilowatt
+	Watt
+Pressure
+	Atmosphere
+	Bar
+	Kilo Pascal
+	Millimeter of mercury
+	Pascal
+	Pound per Square Inch(PSI)
+Temperature
+	Degrees Celsius
+	Degrees Fahrenheit
+	Kelvin
+Time
+	Day
+	Hour
+	Microsecond
+	Millisecond
+	Minute
+	Month
+	Second
+	Week
+	Year
+Velocity
+	Centimeter per second
+	Feet per second
+	Kilometer per second
+	Knots
+	Meter per second
+	Mile per second
+Volume
+	Cubic Centimeter
+	Cubic Feet
+	Cubic Inch
+	Cubic Meter
+	Cubic Yard
+	Fluid Ounce(UK)
+	Fluid Ounce(US)
+	Gallon(UK)
+	Gallon(US)
+	Liter
+	Pint(UK)
+	Pint(US)
+	Quart(UK)
+	Quart(US)
+Weight/Mass
+	Carat
+	Centigram
+	Decigram
+	Dekagram
+	Gram
+	Hectogram
+	Kilogram
+	Long ton
+	Milligram
+	Ounce
+	Pound
+	Short ton
+	Stone
+	Tonne

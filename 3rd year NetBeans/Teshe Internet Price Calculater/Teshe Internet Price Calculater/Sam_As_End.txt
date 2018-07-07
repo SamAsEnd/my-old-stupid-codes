@@ -1,0 +1,14 @@
+/*
+ * @author Sam As End
+ * @date 12/15/2012
+ * @location N-block,poly,BDU
+ * This project was for teshager
+ * to impress his new girl
+ */
+/*
+ * There are couple of Known bugs
+ *   - There is no exeption handling
+ *   - When the user enter time in reverse
+ *      eg Start: 6.20, End 5:40
+ *  And i have no intention to fix them
+ */

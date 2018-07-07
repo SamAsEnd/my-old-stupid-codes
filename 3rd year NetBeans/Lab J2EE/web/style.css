@@ -1,0 +1,59 @@
+* {
+    font-family: Tahoma;
+}
+
+.center {
+    text-align: center;
+}
+
+.bad,.good {
+    font-size: 19px;
+    border-radius: 2px;
+    padding: 3px;
+    background-color: white;
+}
+
+.good {
+    border: 1px lime solid;
+    color: forestgreen;
+}
+.bad {
+    border: 1px red solid;
+    color: firebrick;
+}
+td,th{
+    text-align: left;
+    vertical-align: top;
+    border: 1px dashed burlywood;
+    padding: 6px;
+    font-size: 14px;
+    transition: 0.4s all;
+}
+tr:hover {
+    border: 1px solid burlywood;
+    background-color: moccasin;
+}
+table {
+    border: 2px solid brown;
+    margin: 50px auto;
+}
+th {
+    font-size: 18px;
+    font-weight: bold;
+}
+input[type="submit"],a {
+    display: block;
+    padding: 3px 10px;
+    color: black;
+    text-decoration: none;
+    border: 1px brown solid;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #333;
+}
+input[type="submit"]:hover,a:hover {
+    background-color: chocolate;
+    cursor: pointer;
+}
+input[type="number"]:focus,input[type="text"]:focus,textarea:focus {
+    background-color: wheat;
+}

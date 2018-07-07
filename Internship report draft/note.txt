@@ -1,0 +1,173 @@
+Week 1
+
+This week I started working at Epion. This week was all about getting to know each other and getting ready for my first project. Enque (My supervisor) told me about himself, the company, their products and services, their clients and about their upcoming projects.  
+
+Am told that my first project going to be a website developed by Joomla. 
+
+I don’t have any experience in Joomla besides knowing it’s an Open Source CMS (Content Management System). I have received a rough description and a tutorial to get ready for the project.
+
+Epion usually uses CMS (Joomla and Drupal) to develop a website with a customizable theme called YOOtheme Powered by Warp Theme Framework. And I have to learn to customize the theme to their mockup after I master Joomla.
+
+Technical things I learned this week
+Joomla 
+	is a free and open-source content management system (CMS) for publishing web content
+	is written in PHP, uses object-oriented programming (OOP)
+	implement Strong MVC architecture
+	stores data in a Database and includes features such as page caching, RSS feeds, printable versions of pages, news flashes, blogs, polls, search, and support for language internationalization
+	is currently at version 3.3(but am using 2.5), Initial release at 17 August 2005
+	is download more than 30 million times, new download every 2.5 second
+	have more than 9,600 extensions
+	is estimated to be the second most used content management system on the Internet after WordPress
+	. . . in general Joomla is one-off the leading CMS out there
+
+Am given a task of recreating a premium Joomla template as a test for the next week. 
+
+###############################################################################
+
+Week 2
+
+this week i started recreate the premium Joomla template called Orphan Care using yoo theme master.
+
+The Orphan Care Joomla Template is a Responsive Website. I hace received a tutorial how to make the theme responsive.
+
+Almost all Epion websites are responsive and I have to make the template responsive.
+
+I think am ready to start commercial development on Joomla. I got a good experience working with Orphan Care.
+
+Addis Tena Higher clinic
+
+I started a website for Epion client Addis Tena Higher Clinic located at http://www.addistena.com. currentlly thier website is the worest site imaginable.
+
+The Addis Tena website took me more time of this week and now I am waiting for last comment from my supervisor.
+
+Technical things I learned this week
+Responsive web design
+	is one of the hottest topics among designers and developers right now.
+	term is related to the concept of developing a website design in a manner that helps the layout to get changed according to the user’s computer screen resolution
+	The basic instinct might be to choose media queries to develop a responsive site.
+Media Query
+	By using the @media rule, a website can have a different layout for screen, print, mobile phone, tablet, etc.
+	are incredibly useful because they solve a huge problem that arose quite suddenly in web design: the need to design for vastly different screen sizes.
+
+###############################################################################
+
+Week 3
+
+I have finished the addis tena website and their was some fixes
+	- make the menu move to offcanvas when minimized
+	- combine some of the menus
+	- add a footer to all the pages
+	- addded a contact us form using Chrono forms joomla extension
+	- and a map
+
+adding the chrono form was one of the important thing i learned on joomla. using exension is very helpful when using CMS.
+
+Twitter Bootstrap
+While I was developing the Addis Tena clinic website I noticed the Yoo master theme uses a Front-End framework called Twitter bootstrap. My supervisor told me to study the bootstrap becouse i will use it intensivelly in my next project.
+
+And again when i dig deeper to the bootstrap i have seen the less css preprocesser and even more of some sass.
+
+Technical things I learned this week
+Bootstrap
+	is a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development. It uses HTML, CSS and JavaScript.
+	is a free collection of tools for creating websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. It is the No.1 project on GitHub with 65,000+ stars and 23,800 forks (as of March 2014) and has been used by NASA and MSNBC, among many others.[http://en.wikipedia.org/wiki/Bootstrap_%28front-end_framework%29]
+	Key Features 
+		Mobile first approach
+		Browser Support
+		Easy to get started
+		Responsive design
+	was developed by Mark Otto and Jacob Thornton at Twitter. It was released as an open source product in August 2011 on GitHub.
+	Easly can be modified using the raw source in less
+LESS
+	is a dynamic stylesheet language that can be compiled into Cascading Style Sheets (CSS), or can run on the client-side and server-side.
+	the indented syntax of Less is a nested metalanguage, as valid CSS is valid Less code with the same semantics. Less provides the following mechanisms: variables, nesting, mixins, operators and functions
+	is influenced by Sass and has influenced the newer "SCSS" syntax of Sass, which adapted its CSS-like block formatting syntax.
+SASS
+	Sass (Syntactically Awesome Stylesheets) is a scripting language that is interpreted into Cascading Style Sheets (CSS). SassScript is the scripting language itself. Sass consists of two syntaxes. The original syntax, called "the indented syntax", uses a syntax similar to Haml. It uses indentation to separate code blocks and newline characters to separate rules. The newer syntax, "SCSS", uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate lines within a block. The indented syntax and SCSS files are traditionally given the extensions .sass and .scss respectively.
+
+###############################################################################
+
+Week 4
+
+I have told that my next project is going to be in laravel(A php framework).
+
+But before that i have to start using version control system specially git. My supervisor have told me some of the technical terminologies of git like repository, commit, pull request, push, staging and so on. Using a VCS feels more like a professional and i srtainlly use it for the rest of my life.
+
+In addition i have signed up for github and downloaded a software called source tree which is just one of the GUIs for git.
+
+Technical things I learned this week
+
+Version control
+	is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples i will use  software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer. If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), 
+	is a very wise thing to use. It allows you to revert files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more.
+	Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
+
+git
+	is a distributed revision control system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows.
+	was initially designed and developed by Linus Torvalds for Linux kernel development in 2005, and has since become the most widely adopted version control system for software development.
+	as with most other distributed revision control systems, and unlike most client–server systems, every Git working directory is a full-fledged repository with complete history and full version-tracking capabilities, independent of network access or a central server. Like the Linux kernel, Git is free software distributed under the terms of the GNU General Public License version 2.
+
+###############################################################################
+
+week 5,6
+
+This two weeks i started the laravel framework. i have recieved a ton of tutorials and my supervisor show me the framework in action.
+
+i have installed a software called php storm IDE and sublime text editer, Those are their standard editors the company uses simply becouse they think this softwares increase productivity and code quality as well.
+
+i have upgrade my php interpreter becouse laravel requere php version 5.4 or greater.
+
+and downloaded composer becouse laravel is installed using composer.
+
+I am learing about laravel and to tell the truth am litrally falling in love with it. i have used other frameworks before like codeigniter and cakePHP but they are a headach by just using them. thier is some thing about laravel makes u do great things simply.
+
+in the last days of weeks i was getting deeper to the framework by developing a simple student management system which just CRUD student and parent information.
+
+Am using bootstarp dashboard to the front-end and laravel at the back-end.
+
+Technical things I learned this two week
+
+Composer 
+	is a application-level dependency manager for the PHP programming language that provides a standard format for managing dependencies of PHP software and required libraries.
+	was developed by Nils Adermann and Jordi Boggiano, who continue to manage the project. 
+	is strongly inspired by Node.js's "npm" and Ruby's "bundler".
+	runs through the command line and installs dependencies (e.g. libraries) for an application. 
+	also allows users to install PHP applications that are available on "Packagist" which is its main repository containing available packages. 
+	also provides autoload capabilities for libraries that specify autoload information to ease usage of third-party code.
+
+Laravel
+	is a free, open source PHP web application framework, designed for the development of model–view–controller (MVC) web applications. Laravel is released under the MIT license, with its source code hosted on GitHub.
+	According to a December 2013 developers survey on PHP frameworks popularity, Laravel was listed as the most popular PHP framework of 2013, followed by Phalcon, Symfony2, CodeIgniter and others. As of August 2014, Laravel is the most popular and watched PHP project on GitHub.
+	is a web application framework with expressive, elegant syntax.
+	attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+	aims to make the development process a pleasing one for the developer without sacrificing application functionality.
+	is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+
+Artisan
+	is the name of the command-line interface included with Laravel.
+	provides a number of helpful commands for your use while developing your application.
+	is driven by the powerful Symfony Console component.
+	In addition to the commands provided with Artisan, you may also build your own custom commands for working with your application.
+
+Blade
+	A PHP template engine is a way of outputting PHP in your HTML, without using PHP syntax or PHP tags. It's suppose to be used by having a PHP class that will send your HTML the variables you want to display and the HTML will simply display this data. This means that you are forced to separate your PHP logic with the HTML output, which is great, separation in your code is what you should be aiming for.
+	
+	is a simple, yet powerful templating engine provided with Laravel. Unlike controller layouts, Blade is driven by template inheritance and sections. All Blade templates should use the .blade.php extension.
+
+Migration
+	Migrations are a type of version control for your database. They allow a team to modify the database schema and stay up to date on the current schema state. Migrations are typically paired with the Schema Builder to easily manage your application's schema.
+
+Eloquent ORM
+	The Eloquent ORM included with Laravel provides a beautiful, simple ActiveRecord implementation for working with your database. Each database table has a corresponding "Model" which is used to interact with that table.
+	I have not write any SQL code in my project, thanks to elouquent ORM.
+
+###############################################################################
+
+Week 7
+
+Now  i think am great with laravel and ready to start a real commerciall web driven application with laravel.
+
+Am told that my next project going to be a business dirctory servise called addis biz.
+Business Dirctory Servise is a website where an end users will find bussiness addresses listed.
+The main profit of this website is some clients will pay to increase thier listing type to premium,
+which will make them to be in the top of the list in their category or sub category.
