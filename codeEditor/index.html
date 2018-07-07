@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!----------------------------------------------------------------------------------
+
+    በሳምሶን እንዳለ <4sam21@gmail.com> የበለጸገ
+    ባህር ዳር ዩንቨርሲቲ. ታህሳስ ፪፭፣ ፪፲፻፯ ዓ.ም
+
+    ይህ ሰነደ የ MIT <http://www.opensource.org/licenses/mit-license.php> ፈቃድ ይጠቀማል።
+    ---------------------------------------------------------------------------------->
+    <title> አንደኛ Online HTML መጻፊያ </title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="vender/bootstrap/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="vender/codeMirror/lib/codemirror.css"/>
+    <link rel="stylesheet" href="vender/codeMirror/theme/ambiance.css"/>
+    <link rel="stylesheet" href="vender/codeMirror/addon/hint/show-hint.css"/>
+    <style>
+        #control {
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 25px 35px;
+            z-index: 999;
+        }
+
+        textarea {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div id="preview"></div>
+<form onsubmit="return false;">
+    <!--<label for="editor"></label>-->
+    <textarea id="editor"></textarea>
+    <div id="control">
+        <div class="btn-group">
+            <button type="submit" id="switchBtn" class="btn btn-primary">
+                <i id="switchBtnIcon" class="glyphicon glyphicon-eye-open"></i>
+                <span id="switchBtnLabel">Preview</span>
+            </button>
+        </div>
+    </div>
+</form>
+
+<script src="vender/codeMirror/lib/codemirror.js" type="text/javascript" charset="utf-8"></script>
+<script src="vender/codeMirror/mode/xml/xml.js" type="text/javascript" charset="utf-8"></script>
+<script src="vender/codeMirror/mode/css/css.js" type="text/javascript" charset="utf-8"></script>
+<script src="vender/codeMirror/mode/javascript/javascript.js" type="text/javascript" charset="utf-8"></script>
+<script src="vender/codeMirror/mode/htmlmixed/htmlmixed.js" type="text/javascript" charset="utf-8"></script>
+<script src="vender/codeMirror/addon/hint/show-hint.js" type="text/javascript" charset="utf-8"></script>
+<script src="vender/codeMirror/addon/hint/xml-hint.js" type="text/javascript" charset="utf-8"></script>
+<script src="vender/codeMirror/addon/hint/html-hint.js" type="text/javascript" charset="utf-8"></script>
+<script src="vender/codeMirror/addon/hint/css-hint.js" type="text/javascript" charset="utf-8"></script>
+<script src="vender/codeMirror/addon/hint/javascript-hint.js" type="text/javascript" charset="utf-8"></script>
+<script>
+
+    textArea = document.getElementById('editor');
+    preview = document.getElementById('preview');
+    switchBtn = document.getElementById('switchBtn');
+    switchBtnIcon = document.getElementById('switchBtnIcon');
+    switchBtnLabel = document.getElementById('switchBtnLabel');
+    source = true;
+
+    function launch(d) {
+        // capture the whole html page before the CodeMirror tweak it
+        var zWholePage = document === d ? d.documentElement.innerHTML : d.value;
+        // create an editor
+        window.editor = CodeMirror.fromTextArea(textArea, {
+            mode: "htmlmixed",
+            theme: "ambiance",
+            indentUnit: 4,
+            tabSize: 4,
+            extraKeys: {"Ctrl-Space": "autocomplete"},
+            lineNumbers: true
+        });
+
+        window.editor.setValue(zWholePage);
+        // give it 100 height
+        window.editor.setSize(null, window.innerHeight);
+    }
+
+    launch(document);
+
+    switchBtn.onclick = function () {
+        if (source) {
+            editor.toTextArea();
+            textArea.style.display = 'none';
+            preview.style.display = 'block';
+
+            preview.innerHTML = textArea.value;
+
+            switchBtnIcon.classList.add('glyphicon-eye-close');
+            switchBtnIcon.classList.remove('glyphicon-eye-open');
+            switchBtnLabel.innerHTML = 'Source';
+        } else {
+            launch(textArea);
+            preview.style.display = 'none';
+
+            switchBtnIcon.classList.add('glyphicon-eye-open');
+            switchBtnIcon.classList.remove('glyphicon-eye-close');
+            switchBtnLabel.innerHTML = 'Preview';
+        }
+        source = !source;
+    };
+</script>
+</body>
+</html>
