@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Sam As End PDF genereter</title>
+<script type="text/javascript" src="test.js"></script>
+</head>
+<body bgcolor="#666" onload="SamAsEndLoad();">
+<h2>WYSIWYG Editer</h2>
+<form action="post.php" name="Form" id="Form" method="post">
+<p>Enter Title: <input name="title" id="title" type="text" size="80" maxlength="80" required/></p>
+<p>Enter Body: <br />
+<div style="padding:8px; width:700px;">
+	<input type="button" onclick="SamB()" value="B" />
+    <input type="button" onclick="SamU()" value="U" />
+    <input type="button" onclick="SamI()" value="I" />
+    <input type="button" onclick="SamS()" value="Text Size" />
+    <input type="button" onclick="SamC()" value="Text Color" />
+    <input type="button" onclick="SamHR()" value="HR" />
+    <input type="button" onclick="SamUL()" value="UL" />
+    <input type="button" onclick="SamOL()" value="OL" />
+    <input type="button" onclick="SamLink()" value="Link" />
+    <input type="button" onclick="SamUnlink()" value="Unlink" />
+    <input type="button" onclick="SamImage()" value="Image" />
+</div>
+<textarea style="display:none" name="SamAsEndTEXT" id="SamAsEndTEXT" cols="100" rows="14" required></textarea>
+<iframe name="SamAsEnd" id="SamAsEnd" style="border:#000 1px solid; width: 90%; height: 500px;"></iframe>
+</p>
+<br /><br />
+<input type="button" value="Submit Data" onclick="javascript:submit_form();" />
+</form>
+</body>
+</html>
